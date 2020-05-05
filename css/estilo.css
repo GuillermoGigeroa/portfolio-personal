@@ -1,14 +1,23 @@
 h1 {
-    color: black;
+    color: white;
     text-align: center;
 }
 h3 {
     color: red;
     text-align: center;
 }
-.centrarFoto{
+p  {
+    color: white;
+}
+body{
+    background-color: black;
+}
+.img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 30%;
+    width: 200px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: grey;
 }
