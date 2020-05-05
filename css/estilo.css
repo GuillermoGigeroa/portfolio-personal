@@ -3,21 +3,21 @@ body {
     background-image: url(https://data.1freewallpapers.com/detail/space-stars-sky-night-astronomy.jpg);
     color: white;
     font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
 }
 .img {
     display: inline-block;
     vertical-align: top;
-    width: 200px;
-    border-width: 1px;
+    width: 15em;
+    border-width: 0.1em;
     border-style: solid;
-    border-color: grey;
+    border-color: RGB(40, 40, 40);
 }
 .tituloHeader {
     display: inline-block;
-    vertical-align: top;
+    vertical-align: middle;
     text-align: center;
     font-size: xx-large;
-    font-weight: bold;
 }
 .subtituloHeader {
     display: inline-block;
@@ -31,7 +31,7 @@ a {
 tr {
     color: whitesmoke;
     font-weight: bold;
-    line-height: 0px;
+    line-height: 0em;
 }
 #botonEnviar {
     top: 1%;
