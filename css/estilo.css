@@ -1,5 +1,6 @@
 body {
-    background-color: black;
+    background: black;
+    background-image: url(https://data.1freewallpapers.com/detail/space-stars-sky-night-astronomy.jpg);
     color: white;
     font-family: 'Courier New', Courier, monospace;
 }
@@ -28,7 +29,7 @@ a {
     color: yellow;
 }
 tr {
-    color: grey;
+    color: whitesmoke;
     font-weight: bold;
     line-height: 0px;
 }
