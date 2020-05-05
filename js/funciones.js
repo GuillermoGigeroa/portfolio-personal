@@ -1,0 +1,4 @@
+function accionBoton()
+{
+    alert("Hola");
+}

@@ -10,30 +10,59 @@
 </head>
 <body>
     <header>
-        <table>
-            <td>
-                <h1>
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                </h1>
-            </td>
-            <td>
+            <div>
                 <img src="images/miFoto.jpg" class="img">
+                <p class="tituloHeader">
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    Guillermo Gigeroa
+                    <br><br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    Mi primera página web
+                </p>
+            </div>
+    </header>
+    <h3>Programador estudiante.</h3>
+    <p><br>Programador autodidacta y estudiante de Tecnicatura Universitaria en Programación en la UTN Facultad Regional General Pacheco</p>
+    <!--Tengo que agregar Instagram, Facebook, LinkedIn, GitHub-->
+    <a href="https://github.com/GuillermoGigeroa"><br>Mi GitHub</a>
+    <p>&nbsp;</p>
+    <!--Al final de la web poner un formulario de contacto con tres campos:
+    Nombre, Mail, Mensaje y un botón “Enviar”.
+    Validar con JS que todos los campos sean requeridos.
+    -->
+    <table id="cajaContacto">
+        <tr>
+            <td>
+                <p>Nombre:</p>
             </td>
             <td>
-                <h1 style="text-align: center;">&nbsp;&nbsp;&nbsp;&nbsp;Guillermo Gigeroa<br><br>&nbsp;&nbsp;&nbsp;&nbsp;Mi primera página web</h1>
+                <input type="text" id="nombre">
             </td>
-        </table>
-    </header>
-    <h3>Este es un texto en rojo, no sirve de nada, pero es rojo.</h3>
-    <p>
-        <br>
-        Por favor, tener paciencia, ya que es probable que no funcionen las cosas, ni estén bien
-        estructuradas ya que es la primera vez que hago una web. No será muy linda pero es lo 
-        que pude hacer.
-        <br>
-    </p>
+        </tr>
+        <tr>
+            <td>
+                <p>Mail:</p>
+            </td>
+            <td>
+                <input type="text" id="mail">
+            </td>
+        </tr>
+        <tr>
+            <td>    
+                <p>Mensaje:</p>
+            </td>
+            <td>
+                <textarea name="cajaMensaje" id="mensaje" cols="30" rows="10" style="resize: none"></textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <p></p>
+            </td>
+            <td align="center">
+                <button onclick="accionBoton()" id="botonEnviar">Enviar</button>
+            </td>
+        </tr>
+    </table>
 </body>
 </html>

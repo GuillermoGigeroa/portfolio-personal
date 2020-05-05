@@ -1,23 +1,37 @@
-h1 {
-    color: white;
-    text-align: center;
-}
-h3 {
-    color: red;
-    text-align: center;
-}
-p  {
-    color: white;
-}
-body{
+body {
     background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
 }
-.img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+.img {
+    display: inline-block;
+    vertical-align: top;
     width: 200px;
     border-width: 1px;
     border-style: solid;
     border-color: grey;
+}
+.tituloHeader {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    font-size: xx-large;
+    font-weight: bold;
+}
+.subtituloHeader {
+    display: inline-block;
+    vertical-align: top;
+    text-align: center;
+    font-size: xx-large;
+}
+a {
+    color: yellow;
+}
+tr {
+    color: grey;
+    font-weight: bold;
+    line-height: 0px;
+}
+#botonEnviar {
+    top: 1%;
 }
