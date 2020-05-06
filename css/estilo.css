@@ -8,9 +8,9 @@ body {
 .estiloHeader {
     background: RGB(40, 40, 40);
     background-size: 100%;
-    border-radius: 10px 200px 0px 200px;
-    -moz-border-radius: 10px 200px 0px 200px;
-    -webkit-border-radius: 10px 200px 0px 200px;
+    border-radius: 150px 150px 150px 150px;
+    -moz-border-radius: 150px 150px 150px 150px;
+    -webkit-border-radius: 150px 150px 150px 150px;
 }
 .img {
     display: inline-block;
