@@ -7,14 +7,17 @@ body {
 }
 .estiloHeader {
     background: RGB(40, 40, 40);
-    border-radius: 200px 20px 200px 20px;
-    -moz-border-radius: 200px 20px 200px 20px;
-    -webkit-border-radius: 200px 20px 200px 20px;
+    background-size: 100%;
+    border-radius: 10px 200px 0px 200px;
+    -moz-border-radius: 10px 200px 0px 200px;
+    -webkit-border-radius: 10px 200px 0px 200px;
 }
 .img {
     display: inline-block;
     vertical-align: top;
-    width: 13em;
+    height: 15%;
+    width: 15%;
+    object-fit: contain;
     border-width: 0.2em;
     border-style: solid;
     border-radius: 200px 200px 200px 200px;
