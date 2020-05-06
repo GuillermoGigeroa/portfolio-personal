@@ -22,6 +22,7 @@ function accionBoton()
     var textoCompleto = "Se ha ingresado correctamente:"+'\n';
     textoCompleto += "Nombre: "+textoNombre+'\n';
     textoCompleto += "Mail: "+textoMail+'\n';
-    textoCompleto += "Mensaje: "+textoMensaje;
+    textoCompleto += "Mensaje: "+textoMensaje+'\n'+'\n';
+    textoCompleto += "Esta función todavía está en desarrollo."+'\n'+"Muchas gracias por su colaboración.";
     alert(textoCompleto);
 }
