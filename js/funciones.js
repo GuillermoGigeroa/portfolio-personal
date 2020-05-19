@@ -1,8 +1,8 @@
 function accionBoton()
 {
-    var textoNombre = document.getElementById("nombre").value;
-    var textoMail = document.getElementById("mail").value;
-    var textoMensaje = document.getElementById("mensaje").value;
+    var textoNombre = $("nombre").value;
+    var textoMail = $("mail").value;
+    var textoMensaje = $("mensaje").value;
     if (textoNombre == "")
     {
         alert("No se ha ingresado ningún nombre.");
@@ -26,3 +26,8 @@ function accionBoton()
     textoCompleto += "Esta función todavía está en desarrollo."+'\n'+"Muchas gracias por su colaboración.";
     alert(textoCompleto);
 }
+$(document).ready(function(){
+    $(".btn").click(function(){
+        accionBoton();
+    });   
+});

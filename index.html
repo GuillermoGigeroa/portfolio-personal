@@ -5,24 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Guillermo Gigeroa</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/estilo.css">
     <script src="./js/funciones.js"></script>
 </head>
 <body>
     <script type='text/javascript'>document.oncontextmenu = function(){return false}</script>
-    <header class="estiloHeader">
-        <p style="font-size: 0.1em;">&nbsp;</p>
-        <div class="divCentrado">
-            <img src="images/miFoto.jpg" class="img" alt="Error al cargar foto personal.">
-            <p class="tituloHeader">&nbsp;&nbsp;&nbsp;&nbsp;</p>
-            <p class="tituloHeader"><strong>Guillermo Gigeroa</strong><br><br>Programador estudiante</p>
+    <header>
+        <div class="container">
+            <div class="estiloHeader">
+                <div class="row">
+                    <div class="col">
+                        <div class="row justify-content-center">
+                            <img src="images/miFoto.jpg" class="img-thumbnail" alt="Error al cargar foto personal." width="200px">
+                        </div>
+                        <div class="row justify-content-center">
+                            <p class="tituloHeader"><strong>Guillermo Gigeroa</strong></p>
+                        </div>
+                        <div class="row text-center justify-content-center">
+                            <div class="col-sm-6">
+                                <p>Autodidacta y estudiante de Tecnicatura Universitaria en Programación en la UTN Facultad Regional General Pacheco.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <p style="font-size: 0.1em;">&nbsp;</p>
     </header>
     <div>
-        <p class="centrado">
-            Autodidacta y estudiante de Tecnicatura Universitaria en Programación en la UTN Facultad Regional General Pacheco.
-        </p>
         <p class="linea">&nbsp;</p>
         <p class="izquierda">
             <strong>Formación académica:</strong><br><br>
@@ -92,23 +105,89 @@
         </p>Idiomas: Inglés (intermedio)<br></p>
         <p class="linea">&nbsp;</p>
     </div>
-    <div class="banner"><p><br>Mis páginas<br>&nbsp;</p></div>
-    <div class="divCentrado">
-        <a href="https://github.com/GuillermoGigeroa"><img src="images/logoGitHub.jpg" alt="GitHub" class="imgLogo"></a>
-        <p class="alineado">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-        <a href="https://es-la.facebook.com/gigeroa"><img src="images/logoFacebook.png" alt="Facebook" class="imgLogo"></a>
-        <p class="alineado">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-        <a href="https://www.instagram.com/guille.gigeroa"><img src="images/logoInstagram.jpg" alt="Instagram" class="imgLogo"></a>
-        <p class="alineado">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
-        <a href="https://www.linkedin.com/in/guillermogigeroa"><img src="images/logoLinkedIn.png" alt="LinkedIn" class="imgLogo"></a>
+    <div class="banner">
+        <p><br>Mis páginas<br>&nbsp;</p>
     </div>
+    <p>&nbsp;</p>
+    <div class="container">
+        <div class="row justify-content-around">
+            <div class="card text-center" style="width: 10rem;">
+                <img src="images/logoGitHub.jpg" class="card-img-top" alt="GitHub">
+                <div class="card-body">
+                    <a href="https://github.com/GuillermoGigeroa" class="btn btn-dark">Visitar</a>
+                </div>
+            </div>
+            <div class="card text-center" style="width: 10rem;">
+                <img src="images/logoLinkedIn.png" class="card-img-top" alt="LinkedIn">
+                <div class="card-body">
+                    <a href="https://www.linkedin.com/in/guillermogigeroa" class="btn btn-dark">Visitar</a>
+                </div>
+            </div>
+            <div class="card text-center" style="width: 10rem;">
+                <img src="images/logoInstagram.jpg" class="card-img-top" alt="Instagram">
+                <div class="card-body">
+                    <a href="https://www.instagram.com/guille.gigeroa" class="btn btn-dark">Visitar</a>
+                </div>
+            </div>
+            <div class="card text-center" style="width: 10rem;">
+                <img src="images/logoFacebook.png" class="card-img-top" alt="Facebook">
+                <div class="card-body">
+                    <a href="https://es-la.facebook.com/gigeroa" class="btn btn-dark">Visitar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <p>&nbsp;</p>
+
     <div class="banner">
         <p><br>Contacto<br>&nbsp;</p>
     </div>
+
+    <div class="container">
+        <div class="row justify-content-around">
+            <form>
+                <div class="row">
+                    <div class="form-group">
+                        <div class="row justify-content-md-center">
+                            <label for="lblNombre">Nombre</label>
+                        </div>
+                        <div class="row">
+                            <input class="form-control" type="text" id="mensaje">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <div class="row justify-content-md-center">
+                            <label for="lblEmail">Email</label>
+                        </div>
+                        <div class="row">
+                            <input type="email" class="form-control" id="email">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group">
+                        <div class="row justify-content-md-center">
+                            <label for="lblMensaje">Mensaje</label>
+                        </div>
+                        <div class="row">
+                            <textarea class="form-control" id="mensaje" rows="3"></textarea>
+                        </div>
+                    </div>            
+                </div>
+                <div class="row justify-content-md-center">
+                    <button type="button" class="btn btn-dark">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <!--
+
     <table id="cajaContacto" align="center">
         <tr>
             <td>
-                <p>Nombre:</p>
+                <p class="derecha">Nombre:</p>
             </td>
             <td>
                 <input type="text" id="nombre">
@@ -116,14 +195,14 @@
         </tr>
         <tr>
             <td>
-                <p>Mail:</p>
+                <p class="derecha">Mail:</p>
             </td>
             <td>
                 <input type="text" id="mail">
             </td>
         </tr>
         <tr>
-            <td>    
+            <td style="vertical-align: top;">    
                 <p>Mensaje:</p>
             </td>
             <td>
@@ -134,14 +213,18 @@
             <td>
                 <p></p>
             </td>
-            <td align="center">
+            <td style="padding: 0px; text-align: center;">
                 <button onclick="accionBoton()" id="botonEnviar">Enviar</button>
             </td>
         </tr>
     </table>
+    -->
+    
     <p><br><br>&nbsp;</p>
     <footer>
         <p class="pieDePagina"><br>Proyecto para programación 3 de la UTN FRGP en 2020.<br>Creado por Guillermo Gigeroa.<br>&nbsp;</p>
     </footer>
+            
+    
 </body>
 </html>

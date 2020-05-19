@@ -6,7 +6,7 @@ body {
     font-size: 1em;
 }
 .estiloHeader {
-    background: RGB(40, 40, 40);
+    background: RGB(30,30,30);
     background-size: 100%;
     border-radius: 150px 150px 150px 150px;
     -moz-border-radius: 150px 150px 150px 150px;
@@ -77,6 +77,9 @@ p.centrado {
 }
 p.izquierda {
     text-align: left;
+}
+p.derecha {
+    text-align: right;
 }
 .linea {
     background: RGB(50, 50, 50);
