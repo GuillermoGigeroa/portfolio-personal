@@ -1,8 +1,8 @@
 function accionBoton()
 {
-    var textoNombre = $("nombre").value;
-    var textoMail = $("mail").value;
-    var textoMensaje = $("mensaje").value;
+    var textoNombre = document
+    var textoMail = ("mail").value;
+    var textoMensaje = ("mensaje").value;
     if (textoNombre == "")
     {
         alert("No se ha ingresado ningún nombre.");
@@ -27,7 +27,7 @@ function accionBoton()
     alert(textoCompleto);
 }
 $(document).ready(function(){
-    $(".btn").click(function(){
+    $("#btnEnviar").click(function(){
         accionBoton();
     });   
 });
