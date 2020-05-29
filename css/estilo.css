@@ -2,7 +2,6 @@ body {
     background: black;
     background-image: url(https://data.1freewallpapers.com/detail/space-stars-sky-night-astronomy.jpg);
     color: white;
-    font-family: 'Courier New', Courier, monospace;
     font-size: 1em;
 }
 .estiloHeader {
@@ -80,11 +79,4 @@ p.izquierda {
 }
 p.derecha {
     text-align: right;
-}
-.linea {
-    background: RGB(50, 50, 50);
-    font-size: 0.1em;
-    border-radius: 200px 200px 200px 200px;
-    -moz-border-radius: 200px 200px 200px 200px;
-    -webkit-border-radius: 200px 200px 200px 200px;
 }
