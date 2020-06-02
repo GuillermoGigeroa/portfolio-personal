@@ -24,14 +24,6 @@ body {
     -webkit-border-radius: 200px 200px 200px 200px;
     border-color: RGB(100, 100, 100);
 }
-.imgLogo {
-    display: inline-block;
-    vertical-align: top;
-    width: 5em;
-    border-width: 0.8em;
-    border-style: solid;
-    border-color: whitesmoke;
-}
 .tituloHeader {
     display: inline-block;
     vertical-align: middle;
