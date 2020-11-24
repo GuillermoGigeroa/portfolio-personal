@@ -19,7 +19,7 @@ $(function() {
 });
 
 function cargar(){
-    $("#todo").fadeToggle(500);
+    $("#todo").fadeToggle(1000);
 }
 
 function mostrarDebajo(){
