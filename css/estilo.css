@@ -1,74 +1,482 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&display=swap');
+
 body {
     background: black;
     background-image: url(https://data.1freewallpapers.com/detail/space-stars-sky-night-astronomy.jpg);
     color: white;
-    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+    margin: 0;
 }
-.estiloHeader {
-    background: RGB(30,30,30);
-    background-size: 100%;
-    border-radius: 150px 150px 150px 150px;
-    -moz-border-radius: 150px 150px 150px 150px;
-    -webkit-border-radius: 150px 150px 150px 150px;
+
+ul {
+    padding: 0;
 }
-.img {
-    display: inline-block;
-    vertical-align: top;
-    height: 15%;
-    width: 15%;
-    object-fit: contain;
-    border-width: 0.2em;
-    border-style: solid;
-    border-radius: 200px 200px 200px 200px;
-    -moz-border-radius: 200px 200px 200px 200px;
-    -webkit-border-radius: 200px 200px 200px 200px;
-    border-color: RGB(100, 100, 100);
+
+p {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
 }
-.tituloHeader {
-    display: inline-block;
-    vertical-align: middle;
-    text-align: center;
-    font-size: xx-large;
-}
+
 a {
-    color: yellow;
+    text-decoration: none;
 }
-tr {
-    color: whitesmoke;
-    font-weight: bold;
-    line-height: 0em;
+
+a:hover {
+    color: wheat;
 }
-#botonEnviar {
-    top: 1%;
+
+h1 {
+    font-weight: bolder;
+    font-size: xx-large;
+    margin: 0;
+    padding-bottom: 10px;
 }
-.banner {
-    background: RGB(50, 50, 50);
-    text-align: center;
-    border-radius: 15px 15px 15px 15px;
-    -moz-border-radius: 15px 15px 15px 15px;
-    -webkit-border-radius: 15px 15px 15px 15px;
+
+h4 {
+    font-size: x-large;
+    margin: 0;
+    padding: 5px;
 }
-.pieDePagina {
-    text-align: center;
-    font-size: 0.7em;
-    background-color: RGB(50, 50, 50);
-    border-radius: 15px 15px 15px 15px;
-    -moz-border-radius: 15px 15px 15px 15px;
-    -webkit-border-radius: 15px 15px 15px 15px;
+
+h5 {
+    font-size: large;
+    margin: 0;
 }
-.alineado {
-    display: inline-block;
+
+h6 {
+    font-size: medium;
+    padding-top: 15px;
+    margin: 0;
 }
-.divCentrado {
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+section {
+    margin: 0;
+    padding: 0;
     display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section ul>li>ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
 }
-p.centrado {
-    text-align: center;
+
+section ul>li>ul>li {
+    display: flex;
+    justify-content: left;
+    align-items: flex-start;
+    padding-top: 2px;
+    width: 250px;
 }
-p.izquierda {
+
+section ul>li>ul>li>ul {
     text-align: left;
 }
-p.derecha {
+
+.carta li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-width: 0;
+}
+
+.formulario {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    border-width: 0;
+}
+
+.formulario p {
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
     text-align: right;
+}
+
+@media (min-width: 506px) {
+    .formulario .textoIzquierda {
+        width: 80px;
+    }
+}
+
+@media (max-width: 506px) {
+    .formulario p {
+        text-align: center;
+    }
+}
+
+.formulario li {
+    padding-top: 5px;
+    display: block;
+}
+
+.formulario input {
+    width: 95%;
+}
+
+.formulario textarea {
+    width: 95%;
+    min-width: 95%;
+    max-width: 95%;
+    min-height: 95%;
+    max-height: 150px;
+}
+
+.linea {
+    background-color: darkslategray;
+    height: 6px;
+    border-radius: 5px;
+}
+
+.textoCentrado {
+    text-align: center;
+}
+
+.cajaEstudios {
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 2px;
+    border-color: white;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.banner {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background:RGB(50, 50, 50, 0.8);
+    border-top-style:solid;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style:solid;
+    border-color: RGB(70, 70, 70, 0.8);
+    border-width: 2px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.boton {
+    color: white;
+    font-weight: bold;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 5px;
+}
+
+.btnMouse {
+    cursor: pointer;
+    align-self: center;
+    font-size: small;
+    border-radius: 50%;
+    width: 26px;
+    height: 26px;
+    background-color: transparent;
+    border-color: white;
+    border-style: solid;
+    border-width: 1.5px;
+    color: white;
+    margin-left: 5px;
+}
+
+.easterEgg {
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: yellow;
+}
+
+#barraPrincipal {
+    background: RGB(50, 50, 50, 0.8);
+    border-top-style: none;
+    border-left-style: none;
+    border-right-style: none;
+    border-bottom-style: solid;
+    border-color: RGB(70, 70, 70, 0.8);
+    border-width: 2px;
+    color: white;
+}
+
+#perfilFoto {
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 200px 200px 200px 200px;
+    width: 200px;
+}
+
+#contenedorBarra {
+    padding-top: 15px;
+    padding-bottom: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin-top: 0;
+}
+
+#contenedorDatos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+#datosAcademicos {
+    color: black;
+    background-color: rgba(255,255,255, 0.85);
+    padding: 30px;
+    border-radius: 5px;
+}
+
+#redesSociales ul {
+    list-style: none;    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: transparent;
+}
+
+#redesSociales ul>li>ul {
+    background:RGB(50, 50, 50, 0.8);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    margin: 10px;
+}
+
+#redesSociales ul>li>ul>li {
+    padding: 10px;
+}
+
+#redesSociales img {
+    max-width: 200px;
+    min-width: 200px;
+    max-height: 200px;
+    min-height: 200px;
+    align-self: center;
+    border-style: solid;
+    border-width: 0px;
+    border-radius: 50px;
+    background-color: white;
+    padding: 5px;
+}
+
+#btnEnviar {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    height: 30px;
+}
+
+#cajaAnimacion {
+    margin-bottom: 10000px;
+}
+
+.cssload-thecube {
+	width: 169px;
+	height: 169px;
+	margin: 0 auto;
+	margin-top: 113px;
+	position: relative;
+	transform: rotateZ(45deg);
+		-o-transform: rotateZ(45deg);
+		-ms-transform: rotateZ(45deg);
+		-webkit-transform: rotateZ(45deg);
+		-moz-transform: rotateZ(45deg);
+}
+.cssload-thecube .cssload-cube {
+	position: relative;
+	transform: rotateZ(45deg);
+		-o-transform: rotateZ(45deg);
+		-ms-transform: rotateZ(45deg);
+		-webkit-transform: rotateZ(45deg);
+		-moz-transform: rotateZ(45deg);
+}
+.cssload-thecube .cssload-cube {
+	float: left;
+	width: 50%;
+	height: 50%;
+	position: relative;
+	transform: scale(1.1);
+		-o-transform: scale(1.1);
+		-ms-transform: scale(1.1);
+		-webkit-transform: scale(1.1);
+		-moz-transform: scale(1.1);
+}
+.cssload-thecube .cssload-cube:before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgb(255,255,255);
+	animation: cssload-fold-thecube 1.44s infinite linear both;
+		-o-animation: cssload-fold-thecube 1.44s infinite linear both;
+		-ms-animation: cssload-fold-thecube 1.44s infinite linear both;
+		-webkit-animation: cssload-fold-thecube 1.44s infinite linear both;
+		-moz-animation: cssload-fold-thecube 1.44s infinite linear both;
+	transform-origin: 100% 100%;
+		-o-transform-origin: 100% 100%;
+		-ms-transform-origin: 100% 100%;
+		-webkit-transform-origin: 100% 100%;
+		-moz-transform-origin: 100% 100%;
+}
+.cssload-thecube .cssload-c2 {
+	transform: scale(1.1) rotateZ(90deg);
+		-o-transform: scale(1.1) rotateZ(90deg);
+		-ms-transform: scale(1.1) rotateZ(90deg);
+		-webkit-transform: scale(1.1) rotateZ(90deg);
+		-moz-transform: scale(1.1) rotateZ(90deg);
+}
+.cssload-thecube .cssload-c3 {
+	transform: scale(1.1) rotateZ(180deg);
+		-o-transform: scale(1.1) rotateZ(180deg);
+		-ms-transform: scale(1.1) rotateZ(180deg);
+		-webkit-transform: scale(1.1) rotateZ(180deg);
+		-moz-transform: scale(1.1) rotateZ(180deg);
+}
+.cssload-thecube .cssload-c4 {
+	transform: scale(1.1) rotateZ(270deg);
+		-o-transform: scale(1.1) rotateZ(270deg);
+		-ms-transform: scale(1.1) rotateZ(270deg);
+		-webkit-transform: scale(1.1) rotateZ(270deg);
+		-moz-transform: scale(1.1) rotateZ(270deg);
+}
+.cssload-thecube .cssload-c2:before {
+	animation-delay: 0.175s;
+		-o-animation-delay: 0.175s;
+		-ms-animation-delay: 0.175s;
+		-webkit-animation-delay: 0.175s;
+		-moz-animation-delay: 0.175s;
+}
+.cssload-thecube .cssload-c3:before {
+	animation-delay: 0.36s;
+		-o-animation-delay: 0.36s;
+		-ms-animation-delay: 0.36s;
+		-webkit-animation-delay: 0.36s;
+		-moz-animation-delay: 0.36s;
+}
+.cssload-thecube .cssload-c4:before {
+	animation-delay: 0.535s;
+		-o-animation-delay: 0.535s;
+		-ms-animation-delay: 0.535s;
+		-webkit-animation-delay: 0.535s;
+		-moz-animation-delay: 0.535s;
+}
+
+
+
+@keyframes cssload-fold-thecube {
+	0%, 10% {
+		transform: perspective(315px) rotateX(-180deg);
+		opacity: 0;
+	}
+	25%,
+				75% {
+		transform: perspective(315px) rotateX(0deg);
+		opacity: 1;
+	}
+	90%,
+				100% {
+		transform: perspective(315px) rotateY(180deg);
+		opacity: 0;
+	}
+}
+
+@-o-keyframes cssload-fold-thecube {
+	0%, 10% {
+		-o-transform: perspective(315px) rotateX(-180deg);
+		opacity: 0;
+	}
+	25%,
+				75% {
+		-o-transform: perspective(315px) rotateX(0deg);
+		opacity: 1;
+	}
+	90%,
+				100% {
+		-o-transform: perspective(315px) rotateY(180deg);
+		opacity: 0;
+	}
+}
+
+@-ms-keyframes cssload-fold-thecube {
+	0%, 10% {
+		-ms-transform: perspective(315px) rotateX(-180deg);
+		opacity: 0;
+	}
+	25%,
+				75% {
+		-ms-transform: perspective(315px) rotateX(0deg);
+		opacity: 1;
+	}
+	90%,
+				100% {
+		-ms-transform: perspective(315px) rotateY(180deg);
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes cssload-fold-thecube {
+	0%, 10% {
+		-webkit-transform: perspective(315px) rotateX(-180deg);
+		opacity: 0;
+	}
+	25%,
+				75% {
+		-webkit-transform: perspective(315px) rotateX(0deg);
+		opacity: 1;
+	}
+	90%,
+				100% {
+		-webkit-transform: perspective(315px) rotateY(180deg);
+		opacity: 0;
+	}
+}
+
+@-moz-keyframes cssload-fold-thecube {
+	0%, 10% {
+		-moz-transform: perspective(315px) rotateX(-180deg);
+		opacity: 0;
+	}
+	25%,
+				75% {
+		-moz-transform: perspective(315px) rotateX(0deg);
+		opacity: 1;
+	}
+	90%,
+				100% {
+		-moz-transform: perspective(315px) rotateY(180deg);
+		opacity: 0;
+	}
 }

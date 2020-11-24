@@ -5,239 +5,301 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Guillermo Gigeroa</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/estilo.css">
-    <script src="./js/funciones.js"></script>
+    <script src="./js/jquery-3.5.1.js"></script>
 </head>
+<div id="cajaAnimacion">
+    <div class="cssload-thecube">
+        <div class="cssload-cube cssload-c1"></div>
+        <div class="cssload-cube cssload-c2"></div>
+        <div class="cssload-cube cssload-c4"></div>
+        <div class="cssload-cube cssload-c3"></div>
+    </div>
+</div>
 <body>
-    <script type='text/javascript'>document.oncontextmenu = function(){return false}</script>
-    <header>
-        <div style="background:RGB(50, 50, 50, 0.8);border-top-style:none;border-left-style: none;border-right-style: none;border-bottom-style:solid;border-color: RGB(70, 70, 70, 0.8);border-width: 2px;">
-            <div class="container">
-                <div class="row">
-                    <div class="col">
-                        <div class="row justify-content-center" style="margin-top: 10px;">
-                            <img src="images/miFoto.jpg" class="img-thumbnail" style="border-width: 2px;border-style:solid;border-radius: 200px 200px 200px 200px;-moz-border-radius: 200px 200px 200px 200px;-webkit-border-radius: 200px 200px 200px 200px;" alt="Error al cargar foto personal." width="200px">
-                        </div>
-                        <div class="row justify-content-center">
-                            <p class="tituloHeader"><strong>Guillermo Gigeroa</strong></p>
-                        </div>
-                        <div class="row text-center justify-content-center">
-                            <div class="col-sm-6">
-                                <p>Autodidacta y estudiante de <span style="font-style: oblique;font-weight: 500;">Tecnicatura Universitaria en Programación</span> en la UTN Facultad Regional General Pacheco.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div id="todo">
+        <header>
+            <section id="barraPrincipal">
+                <ul id="contenedorBarra">
+                    <li>
+                        <img id="perfilFoto" src="images/miFoto.jpg" alt="Mi foto">
+                    </li>
+                    <li>
+                        <h1>Guillermo Gigeroa</h1>
+                    </li>
+                    <li>
+                        <p class="textoCentrado">
+                            Autodidacta y estudiante de
+                            <i><b>
+                                    Tecnicatura
+                                    Universitaria en Programación
+                                </b></i>
+                            en la UTN Facultad Regional General Pacheco.
+                        </p>
+                    </li>
+                </ul>
+            </section>
+        </header>
+        <div class="banner">
+            <h4>Mis habilidades</h4>
+            <button id="datos" class="btnMouse">-</button>
         </div>
-    </header>
-    <div class="container" style="margin-top: 50px;">
-        <div class="jumbotron" style="color: black;background-color: rgba(255,255,255, 0.85);padding-top: 30px;padding-bottom: 20px;">
-            <p class="navbar navbar-expand-lg navbar-dark bg-dark" style="padding: 0px;height: 5px;"></p>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <p><strong>Formación académica:</strong><br><br></p>
-                </div>
-                <div class="row" style="margin-top: -25px;margin-bottom: 10px;">
-                    <div class="col-sm-6 alert alert-secondary" style="border-radius: 40px 40px 40px 40px;-moz-border-radius: 40px 40px 40px 40px;-webkit-border-radius: 40px 40px 40px 40px;text-align: center;border-style: double;border-color: white;border-width: 2px;">
-                        <ul style="margin-bottom: 5px;margin-top: 5px;">
+        <div id="contenedorDatos">
+            <div id="datosAcademicos">
+                <div class="linea"></div>
+                <section>
+                    <ul>
+                        <li>
+                            <h5>
+                                <b>
+                                    Formación académica:
+                                </b>
+                            </h5>
+                        </li>
+                        <li class="cajaEstudios">
                             Facultad Regional General Pacheco – Pacheco, Buenos Aires.<br>
-                            <span style="font-style: oblique;font-weight: 500;">Tecnicatura Universitaria en Programación</span>.<br>(Febrero 2019 – Actualidad)
-                        </ul>
-                    </div>
-                    <div class="col-sm-6 alert alert-secondary" style="border-radius: 40px 40px 40px 40px;-moz-border-radius: 40px 40px 40px 40px;-webkit-border-radius: 40px 40px 40px 40px;text-align: center;border-style: double;border-color: white;border-width: 2px;">
-                        <ul style="margin-bottom: 5px;margin-top: 5px;">
+                            <i>
+                                Tecnicatura Universitaria en
+                                Programación.
+                            </i>
+                            <br>(Febrero 2019 – Actualidad)
+                        </li>
+                        <li class="cajaEstudios">
                             Instituto General Belgrano – Belén de Escobar, Buenos Aires.<br>
-                            <span style="font-style: oblique;font-weight: 500;">Bachiller en Economía y Administración</span>.<br>(2007 – 2013)
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <p class="navbar navbar-expand-lg navbar-dark bg-dark" style="padding: 0px;height: 5px;"></p>
-            <div class="container">
-                <div class="row justify-content-center">
-                    <p>
-                        <strong>
-                        Conocimientos Informáticos:
-                        </strong>
-                        <br><br>
-                    </p>
-                </div>
-                <div class="row" style="margin-top: -25px;margin-bottom: 10px;">
-                    <div class="col">
-                        <ul>
-                            <li>
-                                Conocimientos técnicos:<br>
-                                ✔ C#<br>
-                                ✔ SQL<br>
-                                ✔ C++<br>
-                                ✔ Java<br>
-                                ✔ HTML<br>
-                                ✔ Javascript<br>
-                                ✔ CSS<br>
-                                ✔ Bootstrap<br>
-                                ✔ Asp.net<br>
-                                ✔ Python básico<br>
-                                <br>
-                            </li>
-                            <li>
-                                Experiencia en software:<br>
-                                ✔ Visual Studio .Net framework<br>
-                                ✔ SQL Server<br>
-                                ✔ SharpDevelop<br>
-                                ✔ Code::Blocks<br>
-                                ✔ Visual Studio Code<br>
-                                ✔ CorelDraw<br>
-                                ✔ Photoshop<br>
-                                <br>
-                            </li>
-                            <li>
-                                Paquete Microsoft Office:<br>
-                                ✔ Excel avanzado - Funciones y programación en VBA (Macros)<br>
-                                ✔ Word avanzado<br>
-                                ✔ PowerPoint intermedio<br>
-                                ✔ Outlook intermedio<br>
-                                <br>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="col">
-                        <ul>
-                            <li>
-                                Sistemas Operativos:<br>
-                                ✔ Microsoft Windows: 98, XP, Vista, 7, 8, 10<br>
-                                GUI avanzado, CLI: CMD intermedio. (Autodidacta)<br>
-                                ✔ Linux: Debian, Porteus, Mint, Android<br>
-                                GUI intermedio, CLI: Bash intermedio. (Autodidacta)<br>
-                                <br>
-                            </li>
-                            <li>
-                                Idiomas<br>
-                                ✔ Español (Nativo)<br>
-                                ✔ Inglés (Técnico)<br>
-                                <br>
-                            </li>
-                            <li>
-                                Git – desde consola Bash.<br>
-                                (Autodidacta. Utilizando actualmente con <a href="https://github.com/GuillermoGigeroa" style="color: darkblue;">GitHub</a>)<br>
-                                <br>
-                            </li>
-                            <li>
-                                Visual Basic Scripting - en SO Microsoft Windows.<br>
-                                (Autodidacta. Experiencia 2017 – Actualidad)<br>
-                                <br>
-                            </li>
-                            <li>
-                                Visual Basic for Aplications en Microsoft Excel.<br>
-                                (Autodidacta. Experiencia 2017 – Actualidad)<br>
-                                <br>
-                            </li>
-                            <li>
-                                Mecanografía de alta velocidad.<br>
-                                (Teclados QWERTY. Experiencia 2007 – Actualidad)<br>
-                                <br>
-                            </li>
-                            <li>
-                                Programación orientada a objetos, y estructurada.
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <p class="navbar navbar-expand-lg navbar-dark bg-dark" style="padding: 0px;height: 5px;"></p>
-        </div>
-    </div>
-    <div style="text-align: center;background:RGB(50, 50, 50, 0.8);border-top-style:solid;border-left-style: none;border-right-style: none;border-bottom-style:solid;border-color: RGB(70, 70, 70, 0.8);border-width: 2px;margin-top: 5px;margin-bottom: 5px;">
-        <p style="margin-top: 15px;"><strong>Mis páginas</strong></p>
-    </div>
-    <p>&nbsp;</p>
-    <div class="container">
-        <div class="card-deck">
-            <div class="card text-center" style="background-color: RGB(50, 50, 50, 0.8);">
-                <p></p>
-                <a href="https://github.com/GuillermoGigeroa">
-                    <img src="images/logoGitHub.jpg" class="card-img-top" style="max-width: 212px;max-height: 212px;align-self: center;border-style: solid;border-color: white;border-width: 0px;border-radius: 20px;" alt="GitHub">
-                </a>
-                <div class="card-body">
-                    <a href="https://github.com/GuillermoGigeroa" class="btn btn-outline-light">
-                        <strong>
-                            Visitar
-                        </strong>
-                    </a>
-                </div>
-            </div>
-            <div class="card text-center" style="background-color: RGB(50, 50, 50, 0.8);">
-                <p></p>
-                <a href="https://www.linkedin.com/in/guillermogigeroa">
-                    <img src="images/logoLinkedIn.png" class="card-img-top" style="max-width: 200px;max-height: 200px;align-self: center;border-style: solid;border-color: cyan;border-width: 0px;border-radius: 15px;" alt="LinkedIn">
-                </a>
-                <div class="card-body">
-                    <a href="https://www.linkedin.com/in/guillermogigeroa" class="btn btn-outline-light">
-                        <strong>
-                            Visitar
-                        </strong>
-                    </a>
-                </div>
-            </div>
-            <div class="card text-center" style="background-color: RGB(50, 50, 50, 0.8);">
-                <p></p>
-                <a href="https://www.instagram.com/guille.gigeroa">
-                    <img src="images/logoInstagram.jpg" class="card-img-top" style="max-width: 200px;max-height: 200px;align-self: center;border-style: solid;border-color: white;border-width: 0px;border-radius: 60px;" alt="Instagram">
-                </a>
-                <div class="card-body">
-                    <a href="https://www.instagram.com/guille.gigeroa" class="btn btn-outline-light">
-                        <strong>
-                            Visitar
-                        </strong>
-                    </a>
-                </div>
-            </div>
-            <div class="card text-center" style="background-color: RGB(50, 50, 50, 0.8);">
-                <p></p>
-                <a href="https://es-la.facebook.com/gigeroa">
-                    <img src="images/logoFacebook.png" class="card-img-top" style="max-width: 200px;max-height: 200px;align-self: center;border-style: solid;border-color: white;border-width: 0px;border-radius: 20px;" alt="Facebook">
-                </a>
-                <div class="card-body">
-                    <a href="https://es-la.facebook.com/gigeroa" class="btn btn-outline-light">
-                        <strong>
-                            Visitar
-                        </strong>
-                    </a>
-                </div>
+                            <i>
+                                Bachiller en Economía y
+                                Administración.
+                            </i>
+                            <br>(2007 – 2013)
+                        </li>
+                    </ul>
+                </section>
+                <div class="linea"></div>
+                <section>
+                    <ul>
+                        <li>
+                            <h5>
+                                <b>
+                                    Mis conocimientos:
+                                </b>
+                            </h5>
+                        </li>
+                        <li>
+                            <ul>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <h6>Lenguajes y conocimientos técnicos:</h6>
+                                        </li>
+                                        <li>✔ C#</li>
+                                        <li>✔ SQL</li>
+                                        <li>✔ C++</li>
+                                        <li>✔ Java</li>
+                                        <li>✔ HTML</li>
+                                        <li>✔ CSS</li>
+                                        <li>✔ Javascript</li>
+                                        <li>✔ JQuery</li>
+                                        <li>✔ Boostrap</li>
+                                        <li>✔ ASP.net</li>
+                                        <li>✔ Python básico</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <h6>Software:</h6>
+                                        </li>
+                                        <li>✔ Visual Studio .Net framework</li>
+                                        <li>✔ SQL Server</li>
+                                        <li>✔ SharpDevelop</li>
+                                        <li>✔ Code::Blocks</li>
+                                        <li>✔ Visual Studio Code</li>
+                                        <li>✔ CorelDraw</li>
+                                        <li>✔ Photoshop</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <h6>Paquete Microsoft Office:</h6>
+                                        </li>
+                                        <li>✔ Excel avanzado (con macros)</li>
+                                        <li>✔ Word avanzado</li>
+                                        <li>✔ PowerPoint intermedio</li>
+                                        <li>✔ Outlook intermedio</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <h6>Sistemas Operativos:</h6>
+                                        </li>
+                                        <li>
+                                            ✔ Microsoft Windows: 98, XP, Vista, 7, 8, 10<br>
+                                            GUI avanzado, CLI: CMD intermedio. (Autodidacta)
+                                        </li>
+                                        <li>
+                                            ✔ Linux: Debian, Porteus, Mint, Android<br>
+                                            GUI intermedio, CLI: Bash intermedio. (Autodidacta)
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <h6>Idiomas</h6>
+                                        </li>
+                                        <li>✔ Español (Nativo)</li>
+                                        <li>✔ Inglés (Técnico)</li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <ul>
+                                        <li>
+                                            <h6>Más conocimientos:</h6>
+                                        </li>
+                                        <li>
+                                            ✔ Git – desde consola Bash.
+                                            (Autodidacta. Utilizando actualmente con GitHub)
+                                        </li>
+                                        <li>
+                                            ✔ Visual Basic Scripting - en SO Microsoft Windows.
+                                            (Autodidacta. Experiencia 2017 – Actualidad)
+                                        </li>
+                                        <li>
+                                            ✔ Visual Basic for Aplications en Microsoft Excel.
+                                            (Autodidacta. Experiencia 2017 – Actualidad)
+                                        </li>
+                                        <li>
+                                            ✔ Mecanografía de alta velocidad.
+                                            (Teclados QWERTY. Experiencia 2007 – Actualidad)
+                                        </li>
+                                        <li>
+                                            ✔ Programación orientada a objetos, y estructurada.
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </section>
+                <div class="linea"></div>
             </div>
         </div>
-    </div>
-    <p>&nbsp;</p>
-    <div style="text-align: center;background:RGB(50, 50, 50, 0.9);border-top-style:solid;border-left-style: none;border-right-style: none;border-bottom-style:solid;border-color: RGB(70, 70, 70, 0.8);border-width: 2px;margin-top: 5px;margin-bottom: 5px;">
-        <p style="margin-top: 15px;"><strong>Contacto (en desarrollo)</strong></p>
-    </div>
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col col-sm-5">
-                <form>
-                    <div class="form-group">
-                        <label for="lblNombre"><strong>Nombre:</strong></label>
-                        <input class="form-control" style="background-color: rgb(255,255,255, 0.8);color: black;" type="text" id="mensaje">
-                    </div>
-                    <div class="form-group">
-                            <label for="lblEmail"><strong>Email:</strong></label>
-                            <input type="email" style="background-color: rgb(255,255,255, 0.8);color: black;" class="form-control" id="email">
-                        </div>
-                    <div class="form-group">
-                        <label for="lblMensaje"><strong>Mensaje:</strong></label>
-                            <textarea class="form-control" style="background-color: rgb(255,255,255, 0.8);color: black;" id="mensaje" rows="3"></textarea>
-                        </div>            
-                        <div class="row justify-content-md-center">
-                        <button type="button" class="btn btn-dark" id="btnEnviar">Enviar</button>
-                    </div>
-                </form>
-            </div>
+        <div class="banner">
+            <h4>Mis páginas</h4>
+            <button id="redes" class="btnMouse">-</button>
         </div>
+        <section id="redesSociales">
+            <ul>
+                <li>
+                    <ul class="carta">
+                        <li>
+                            <a href="https://github.com/GuillermoGigeroa">
+                                <img src="images/logoGitHub.jpg" alt="GitHub">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="boton" href="https://github.com/GuillermoGigeroa">Visitar</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="carta">
+                        <li>
+                            <a href="https://www.linkedin.com/in/guillermogigeroa">
+                                <img src="images/logoLinkedIn.png" class="card-img-top" alt="LinkedIn">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="boton" href="https://www.linkedin.com/in/guillermogigeroa"
+                                class="btn btn-outline-light">
+                                Visitar
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="carta">
+                        <li>
+                            <a href="https://www.instagram.com/guille.gigeroa">
+                                <img src="images/logoInstagram.jpg" class="card-img-top" alt="Instagram">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="boton" href="https://www.instagram.com/guille.gigeroa"
+                                class="btn btn-outline-light">
+                                Visitar
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="carta">
+                        <li>
+                            <a href="https://es-la.facebook.com/gigeroa">
+                                <img src="images/logoFacebook.png" class="card-img-top" alt="Facebook">
+                            </a>
+                        </li>
+                        <li>
+                            <a class="boton" href="https://es-la.facebook.com/gigeroa" class="btn btn-outline-light">
+                                Visitar
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <div class="banner">
+            <h4>Contacto</h4>
+            <button id="contacto" class="btnMouse">-</button>
+        </div>
+        <section class="formulario" id="contenidoContacto">
+            <h2 id="easterEgg" class="easterEgg">&nbsp;</h2>
+            <h2 class="easterEgg">guillermo.gigeroa@hotmail.com</h2>
+            <ul>
+                <li>
+                    <ul>
+                        <li class="textoIzquierda">
+                            <p>Nombre:</p>
+                        </li>
+                        <li>
+                            <input type="text" id="txtNombre" placeholder="Nombre">
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li class="textoIzquierda">
+                            <p>Email:</p>
+                        </li>
+                        <li>
+                            <input type="email" id="txtEmail" placeholder="Email">
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li class="textoIzquierda">
+                            <p>Mensaje:</p>
+                        </li>
+                        <li>
+                            <textarea id="txtMensaje" rows="3" placeholder="Mensaje"></textarea>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul>
+                        <li class="textoIzquierda"></li>
+                        <li id="btnEnviar">
+                            <a class="boton" href="mailto:guillermo.gigeroa@hotmail.com" target="_blank">Contactar</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </section>
+        <script src="./js/comportamiento.js"></script>
     </div>
-    <footer style="padding:10px;"></footer>
 </body>
+
 </html>
