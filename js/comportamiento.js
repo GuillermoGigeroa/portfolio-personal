@@ -1,12 +1,7 @@
-var textoEasterEgg = "Muchas gracias por utilizar mi caja de mensajes";
-var ultimaLetra = 0;
-var oculto = false;
-
 $(function() {
     cargar();
-    $("#txtNombre").val("");
-    $("#txtEmail").val("");
-    $("#txtMensaje").val("");
+    $("#nombre").val("");
+    $("#mensaje").val("");
     textToggler("#contacto");
     $("#contenidoContacto").hide();
     textToggler("#redes");
@@ -41,15 +36,20 @@ $("#datos").click(function(){
     $("#contenedorDatos").slideToggle(500);
 });
 
-$("#txtMensaje").keydown(function(){
-    escribirSaludo();
+$("#mensaje").on("click", function(){
+    desactivarTriggers();
+    activarSaludo();
 });
-$("#txtNombre").keydown(function(){
-    escribirSaludo();
+
+$("#nombre").on("click", function(){
+    desactivarTriggers();
+    activarSaludo();
 });
-$("#txtEmail").keydown(function(){
-    escribirSaludo();
-});
+
+function desactivarTriggers(){
+    $("#txtMensaje").off("click");
+    $("#txtNombre").off("click");
+};
 
 function textToggler(nombre){
     if($(nombre).text() == "+"){
@@ -60,13 +60,82 @@ function textToggler(nombre){
     }
 };
 
+var textoEasterEgg = "Gracias por utilizar mi caja de mensajes";
+var ultimaLetraEasterEgg = 0;
+var saludoController;
+
+function activarSaludo(){
+    saludoController = setInterval(escribirSaludo,50);
+}
+
+function desactivarSaludo(){
+    clearInterval(saludoController);
+}
+
 function escribirSaludo(){
     let texto = "";
-    if(ultimaLetra != textoEasterEgg.length){
-        for (i = 0; i <= ultimaLetra; i++){
+    if(ultimaLetraEasterEgg != textoEasterEgg.length){
+        for (i = 0; i <= ultimaLetraEasterEgg; i++){
             texto += textoEasterEgg[i];
             $("#easterEgg").text(texto);
         }
-        ultimaLetra++;
+        ultimaLetraEasterEgg++;
+    }
+    else{
+        desactivarSaludo();
+        activarNombre();
+    }
+};
+
+var textoNombre = "Ingresa aquí tu nombre.";
+var ultimaLetraNombre = 0;
+var nombreController;
+
+function activarNombre(){
+    nombreController = setInterval(escribirInstruccionesNombre,50);
+}
+
+function desactivarNombre(){
+    clearInterval(nombreController);
+}
+
+function escribirInstruccionesNombre(){
+    let texto = "";
+    if(ultimaLetraNombre != textoNombre.length){
+        for (i = 0; i <= ultimaLetraNombre; i++){
+            texto += textoNombre[i];
+            $("#nombre").attr("placeholder",texto);
+        }
+        ultimaLetraNombre++;
+    }
+    else{
+        desactivarNombre();
+        activarMensaje();
+    }
+};
+
+var textoMensaje = "Aquí ingresa tu mensaje, y luego presiona contactar.";
+var ultimaLetraMensaje = 0;
+var mensajeController;
+
+function activarMensaje(){
+    mensajeController = setInterval(escribirInstruccionesMensaje,50);
+}
+
+function desactivarMensaje(){
+    clearInterval(mensajeController);
+}
+
+function escribirInstruccionesMensaje(){
+    let texto = "";
+    if(ultimaLetraMensaje != textoMensaje.length){
+        for (i = 0; i <= ultimaLetraMensaje; i++){
+            texto += textoMensaje[i];
+            $("#mensaje").attr("placeholder",texto);
+        }   
+        ultimaLetraMensaje++;
+    }
+    else{
+        desactivarMensaje();
     }
 };

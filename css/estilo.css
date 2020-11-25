@@ -93,47 +93,43 @@ section ul>li>ul>li>ul {
     border-width: 0;
 }
 
-.formulario {
+.formulario form {
     display: block;
     justify-content: center;
     align-items: center;
     border-width: 0;
 }
 
-.formulario p {
+.formulario label {
     font-weight: bold;
     padding: 0;
     margin: 0;
     text-align: right;
 }
 
-@media (min-width: 506px) {
-    .formulario .textoIzquierda {
-        width: 80px;
-    }
+.formulario h2 {
+    width: 300px;
 }
 
-@media (max-width: 506px) {
-    .formulario p {
-        text-align: center;
-    }
-}
-
-.formulario li {
+.formulario form>li {
     padding-top: 5px;
     display: block;
 }
 
 .formulario input {
-    width: 95%;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: small;
 }
 
 .formulario textarea {
-    width: 95%;
-    min-width: 95%;
-    max-width: 95%;
-    min-height: 95%;
-    max-height: 150px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: small;
+}
+
+.formulario .textoIzquierda {
+    text-align: left !important;
 }
 
 .linea {
@@ -160,7 +156,7 @@ section ul>li>ul>li>ul {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background:RGB(50, 50, 50, 0.8);
+    background-color: RGB(50, 50, 50, 0.8);
     border-top-style:solid;
     border-left-style: none;
     border-right-style: none;
@@ -206,6 +202,11 @@ section ul>li>ul>li>ul {
     padding-left: 10px;
     padding-right: 10px;
     color: yellow;
+}
+
+#contactar {
+    background-color: RGB(50, 50, 50, 0.8);
+    cursor: pointer;
 }
 
 #barraPrincipal {
@@ -393,8 +394,6 @@ section ul>li>ul>li>ul {
 		-webkit-animation-delay: 0.535s;
 		-moz-animation-delay: 0.535s;
 }
-
-
 
 @keyframes cssload-fold-thecube {
 	0%, 10% {
