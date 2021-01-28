@@ -9,15 +9,6 @@
     <link rel="stylesheet" href="./css/estilo.css">
     <script src="./js/jquery-3.5.1.js"></script>
 </head>
-<div id="cajaAnimacion">
-    <div class="cssload-thecube">
-        <div class="cssload-cube cssload-c1"></div>
-        <div class="cssload-cube cssload-c2"></div>
-        <div class="cssload-cube cssload-c4"></div>
-        <div class="cssload-cube cssload-c3"></div>
-    </div>
-</div>
-
 <body>
     <div id="todo">
         <header>
@@ -255,17 +246,11 @@
             <button id="contacto" class="btnMouse">-</button>
         </div>
         <section class="formulario" id="contenidoContacto">
-            <form action="mailto:guillermo.gigeroa@hotmail.com" method="post" enctype="text/plain" name="form1">
-                <h2 id="easterEgg" class="easterEgg">&nbsp;</h2>
-                <!-- Para activar el easter egg, escriba en las cajas de contacto -->
-                <ul>
-                    <li class="textoIzquierda">
-                        <label for="nombre">Nombre: </label>
-                    </li>
-                    <li>
-                        <input id="nombre" name="Nombre" placeholder="Nombre" type="text" />
-                    </li>
-                </ul>
+            <div>
+                <div id="contenedorEaster">
+                    <h2 id="easterEgg" class="easterEgg">&nbsp;</h2>
+                </div>
+                <!-- Para activar el easter egg, escriba en la caja de contacto -->
                 <ul>
                     <li class="textoIzquierda">
                         <label for="mensaje">Mensaje: </label>
@@ -277,10 +262,13 @@
                 <ul>
                     <li class="textoIzquierda"></li>
                     <li>
-                        <button class="boton" id="contactar" type="submit">Contactar</button>
+                        <button class="boton" id="contactar">Contactar por WhatsApp</button>
                     </li>
                 </ul>
-            </form>
+                <div id="contenedorEaster">
+                    <h2 id="email">guillermo.gigeroa@hotmail.com</h2>
+                </div>
+            </div>
         </section>
         <script src="./js/comportamiento.js"></script>
     </div>

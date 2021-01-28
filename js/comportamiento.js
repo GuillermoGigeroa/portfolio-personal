@@ -1,5 +1,4 @@
 $(function() {
-    cargar();
     $("#nombre").val("");
     $("#mensaje").val("");
     textToggler("#contacto");
@@ -8,18 +7,7 @@ $(function() {
     $("#redesSociales").hide();
     textToggler("#datos");
     $("#contenedorDatos").hide();
-    $(".cssload-thecube").fadeToggle(2000);
-    window.setTimeout(cargar,2001);
-    window.setTimeout(mostrarDebajo,2002);
 });
-
-function cargar(){
-    $("#todo").fadeToggle(1000);
-}
-
-function mostrarDebajo(){
-    $("#cajaAnimacion").css("margin-bottom","0");
-}
 
 $("#contacto").click(function(){
     textToggler("#contacto");
@@ -60,7 +48,7 @@ function textToggler(nombre){
     }
 };
 
-var textoEasterEgg = "Gracias por utilizar mi caja de mensajes";
+var textoEasterEgg = "Gracias por utilizar mi caja de mensajes. Si no quieres contactar por WhatsApp, mi email se encuentra más abajo";
 var ultimaLetraEasterEgg = 0;
 var saludoController;
 
@@ -83,33 +71,6 @@ function escribirSaludo(){
     }
     else{
         desactivarSaludo();
-        activarNombre();
-    }
-};
-
-var textoNombre = "Ingresa aquí tu nombre.";
-var ultimaLetraNombre = 0;
-var nombreController;
-
-function activarNombre(){
-    nombreController = setInterval(escribirInstruccionesNombre,50);
-}
-
-function desactivarNombre(){
-    clearInterval(nombreController);
-}
-
-function escribirInstruccionesNombre(){
-    let texto = "";
-    if(ultimaLetraNombre != textoNombre.length){
-        for (i = 0; i <= ultimaLetraNombre; i++){
-            texto += textoNombre[i];
-            $("#nombre").attr("placeholder",texto);
-        }
-        ultimaLetraNombre++;
-    }
-    else{
-        desactivarNombre();
         activarMensaje();
     }
 };
@@ -139,3 +100,17 @@ function escribirInstruccionesMensaje(){
         desactivarMensaje();
     }
 };
+
+$("#contactar").click(function(){
+    var mensaje = $("#mensaje").val();
+    var link = "https://api.whatsapp.com/send?phone=541169221781";
+    if(mensaje == ""){
+        mensaje = "Hola, quiero contactar contigo."
+        link = link + "&text=" + mensaje;
+        window.open(link, "_blank");
+    }
+    else{
+        link = link + "&text=" + mensaje;
+        window.open(link, "_blank");
+    }
+})
