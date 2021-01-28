@@ -114,3 +114,7 @@ $("#contactar").click(function(){
         window.open(link, "_blank");
     }
 })
+
+$("#email").click(function(){
+    window.open('mailto:guillermo.gigeroa@hotmail.com');
+})

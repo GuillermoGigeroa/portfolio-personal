@@ -208,6 +208,7 @@ section ul>li>ul>li>ul {
     text-align: center;
     color: yellow;
     max-width: 450px !important;
+    cursor: pointer;
 }
 
 .easterEgg {
