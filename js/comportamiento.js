@@ -48,7 +48,7 @@ function textToggler(nombre){
     }
 };
 
-var textoEasterEgg = "Gracias por utilizar mi caja de mensajes. Si no quieres contactar por WhatsApp, mi email se encuentra más abajo.";
+var textoEasterEgg = "Gracias por utilizar mi caja de mensajes.";
 var ultimaLetraEasterEgg = 0;
 var saludoController;
 
