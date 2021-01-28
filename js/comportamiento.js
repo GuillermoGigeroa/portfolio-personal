@@ -48,7 +48,7 @@ function textToggler(nombre){
     }
 };
 
-var textoEasterEgg = "Gracias por utilizar mi caja de mensajes. Si no quieres contactar por WhatsApp, mi email se encuentra más abajo";
+var textoEasterEgg = "Gracias por utilizar mi caja de mensajes. Si no quieres contactar por WhatsApp, mi email se encuentra más abajo.";
 var ultimaLetraEasterEgg = 0;
 var saludoController;
 
@@ -105,7 +105,7 @@ $("#contactar").click(function(){
     var mensaje = $("#mensaje").val();
     var link = "https://api.whatsapp.com/send?phone=541169221781";
     if(mensaje == ""){
-        mensaje = "Hola, quiero contactar contigo."
+        mensaje = "Hola, he visto tu web y quiero hablar contigo."
         link = link + "&text=" + mensaje;
         window.open(link, "_blank");
     }
