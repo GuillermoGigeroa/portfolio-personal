@@ -116,5 +116,15 @@ $("#contactar").click(function(){
 })
 
 $("#email").click(function(){
-    window.open('mailto:guillermo.gigeroa@hotmail.com');
+    var mensaje = $("#mensaje").val();
+    link = "mailto:guillermo.gigeroa@hotmail.com?subject=Contacto por web&"
+    if(mensaje == ""){
+        mensaje = "Hola, he visto tu web y quiero hablar contigo."
+        link = link + "&body=" + mensaje;
+        window.open(link, "_blank");
+    }
+    else{
+        link = link + "&body=" + mensaje;
+        window.open(link, "_blank");
+    }
 })
