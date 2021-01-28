@@ -21,6 +21,7 @@ p {
 
 a {
     text-decoration: none;
+    color: white;
 }
 
 a:hover {
@@ -309,4 +310,11 @@ section ul>li>ul>li>ul {
     justify-content: center;
     align-content: center;
     height: 30px;
+}
+
+video {
+    border-width: 1px;
+    border-style: solid;
+    border-color: white;
+    border-radius: 5px;
 }
