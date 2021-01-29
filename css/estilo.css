@@ -313,8 +313,15 @@ section ul>li>ul>li>ul {
 }
 
 video {
+    width: 60%;
     border-width: 1px;
     border-style: solid;
     border-color: white;
     border-radius: 5px;
+}
+
+@media (max-width: 700px){
+    video {
+        width: 100%;
+    }
 }
