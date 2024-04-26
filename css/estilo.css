@@ -3,6 +3,7 @@
 body {
     background: black;
     background-image: url(../images/space.jpg);
+    background-size: contain;
     color: white;
     font-family: 'Roboto', sans-serif;
     padding: 0;
