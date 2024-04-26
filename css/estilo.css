@@ -311,17 +311,3 @@ section ul>li>ul>li>ul {
     align-content: center;
     height: 30px;
 }
-
-video {
-    width: 60%;
-    border-width: 1px;
-    border-style: solid;
-    border-color: white;
-    border-radius: 5px;
-}
-
-@media (max-width: 700px){
-    video {
-        width: 100%;
-    }
-}
