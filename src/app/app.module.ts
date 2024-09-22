@@ -21,6 +21,8 @@ import { UtilsService } from './shared/services/utils.service';
     NavigationService,
     UtilsService,
   ],
-  bootstrap: [AppComponent]
+  bootstrap: [
+    AppComponent
+  ]
 })
 export class AppModule { }
