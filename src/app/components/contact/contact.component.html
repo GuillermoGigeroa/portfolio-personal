@@ -7,25 +7,21 @@
     class="formulario"
     id="contenidoContacto">
     <div>
-        <div id="contenedorEaster">
-            <h2 id="easterEgg" class="easterEgg">&nbsp;</h2>
-        </div>
-        <!-- Para activar el easter egg, escriba en la caja de contacto -->
         <ul>
             <li class="textoIzquierda">
                 <label for="mensaje">Mensaje: </label>
             </li>
             <li>
-                <textarea id="mensaje" name="Mensaje" placeholder="Aquí ingresa tu mensaje, y luego presiona contactar."></textarea>
+                <textarea [(ngModel)]="message" id="mensaje" name="Mensaje" placeholder="Aquí ingresa tu mensaje, y luego presiona contactar."></textarea>
             </li>
         </ul>
         <ul>
             <li class="textoIzquierda"></li>
             <li>
-                <button class="boton contactar" id="contactar">Contactar por WhatsApp</button>
+                <button class="boton contactar" id="contactar" (click)="sendMessage('whatsapp')">Contactar por WhatsApp</button>
             </li>
             <li>
-                <button class="boton contactar" id="email">Contactar por email</button>
+                <button class="boton contactar" id="email" (click)="sendMessage('email')">Contactar por email</button>
             </li>
         </ul>
     </div>

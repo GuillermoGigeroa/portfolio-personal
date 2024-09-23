@@ -9,7 +9,14 @@ import { UtilsService } from 'src/app/shared/services/utils.service';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
+  readonly messageDefault = 'Hola, he visto tu web y quiero hablar contigo.';
+  readonly whatsappBase = 'https://api.whatsapp.com/send?phone=541169221781';
+  readonly emailBase = 'mailto:guillermo.gigeroa@hotmail.com?subject=Contacto por web&';
+  readonly keyMessage = '&text=';
+
   showMenu = false;
+  message?: string;
+
   constructor(
     private dataService: DataService,
     private navigationService: NavigationService,
@@ -20,31 +27,32 @@ export class ContactComponent {
     this.showMenu = !this.showMenu;
   }
 
-  // $("#contactar").click(function(){
-  //   var mensaje = $("#mensaje").val();
-  //   var link = "https://api.whatsapp.com/send?phone=541169221781";
-  //   if(mensaje == ""){
-  //       mensaje = "Hola, he visto tu web y quiero hablar contigo."
-  //       link = link + "&text=" + mensaje;
-  //       window.open(link, "_blank");
-  //   }
-  //   else{
-  //       link = link + "&text=" + mensaje;
-  //       window.open(link, "_blank");
-  //   }
-  // })
+  sendMessage(type: string) {
+    switch (type)
+    {
+      case 'whatsapp':
+        {
+          this.sendWhatsapp();
+          break;
+        }
+      case 'email':
+        {
+          this.sendEmail();
+          break;
+        }
+      default:
+        break;
+    }
+  }
 
-  // $("#email").click(function(){
-  //     var mensaje = $("#mensaje").val();
-  //     link = "mailto:guillermo.gigeroa@hotmail.com?subject=Contacto por web&"
-  //     if(mensaje == ""){
-  //         mensaje = "Hola, he visto tu web y quiero hablar contigo."
-  //         link = link + "&body=" + mensaje;
-  //         window.open(link, "_blank");
-  //     }
-  //     else{
-  //         link = link + "&body=" + mensaje;
-  //         window.open(link, "_blank");
-  //     }
-  // })
+  private sendWhatsapp() {
+    const link = this.whatsappBase + this.keyMessage + (this.message !== undefined ? this.message : this.messageDefault);
+    this.navigationService.openExternal(link);
+  }
+
+  private sendEmail() {
+    const link = this.emailBase + this.keyMessage + (this.message !== undefined ? this.message : this.messageDefault);
+    this.navigationService.openExternal(link);
+  }
+
 }

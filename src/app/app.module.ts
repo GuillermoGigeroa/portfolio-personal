@@ -9,6 +9,7 @@ import { SkillsComponent } from './components/skills/skills.component';
 import { DataService } from './shared/services/data.service';
 import { PagesComponent } from './components/pages/pages.component';
 import { ContactComponent } from './components/contact/contact.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { ContactComponent } from './components/contact/contact.component';
     BrowserModule,
     AppRoutingModule,
     SharedModule,
+    FormsModule,
   ],
   providers: [
     DataService,

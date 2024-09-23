@@ -17,4 +17,8 @@ export class NavigationService {
     window.location.href = `?_reload`;
   }
 
+  openExternal(url: string) {
+    window.open(url, "_blank");
+  }
+
 }
