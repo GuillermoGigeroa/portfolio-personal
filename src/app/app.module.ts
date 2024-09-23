@@ -7,11 +7,15 @@ import { NavigationService } from './shared/services/navigation.service';
 import { UtilsService } from './shared/services/utils.service';
 import { SkillsComponent } from './components/skills/skills.component';
 import { DataService } from './shared/services/data.service';
+import { PagesComponent } from './components/pages/pages.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SkillsComponent,
+    PagesComponent,
+    ContactComponent,
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,64 @@
+<div class="banner">
+    <h4>Mis páginas</h4>
+    <button id="redes" class="btnMouse" (click)="toggleMenu()">{{showMenu ? '-' : '+'}}</button>
+</div>
+<section 
+    [ngClass]="{'showMenu': showMenu, 'hideMenu': !showMenu}"    
+    id="redesSociales">
+    <ul>
+        <li>
+            <ul class="carta">
+                <li>
+                    <a href="https://github.com/GuillermoGigeroa" target="_blank">
+                        <img src="assets/images/logoGitHub.jpg" alt="GitHub">
+                    </a>
+                </li>
+                <li>
+                    <a class="boton" href="https://github.com/GuillermoGigeroa">Visitar</a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <ul class="carta">
+                <li>
+                    <a href="https://www.linkedin.com/in/guillermogigeroa" target="_blank">
+                        <img src="assets/images/logoLinkedIn.png" alt="LinkedIn">
+                    </a>
+                </li>
+                <li>
+                    <a class="boton" href="https://www.linkedin.com/in/guillermogigeroa" target="_blank">
+                        Visitar
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <ul class="carta">
+                <li>
+                    <a href="https://www.instagram.com/guille.gigeroa" target="_blank">
+                        <img src="assets/images/logoInstagram.jpg" alt="Instagram">
+                    </a>
+                </li>
+                <li>
+                    <a class="boton" href="https://www.instagram.com/guille.gigeroa" target="_blank">
+                        Visitar
+                    </a>
+                </li>
+            </ul>
+        </li>
+        <li>
+            <ul class="carta">
+                <li>
+                    <a href="https://es-la.facebook.com/gigeroa" target="_blank">
+                        <img src="assets/images/logoFacebook.png" alt="Facebook" target="_blank">
+                    </a>
+                </li>
+                <li>
+                    <a class="boton" href="https://es-la.facebook.com/gigeroa" target="_blank">
+                        Visitar
+                    </a>
+                </li>
+            </ul>
+        </li>
+    </ul>
+</section>
