@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { ContactComponent } from './contact.component';
+import { NavigationService } from 'src/app/shared/services/navigation.service';
+import { NavigationServiceMock } from 'src/app/shared/mocks/navigation.service.mock';
+import { FormsModule } from '@angular/forms';
 
 describe('ContactComponent', () => {
   let component: ContactComponent;
@@ -8,7 +10,11 @@ describe('ContactComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ContactComponent ]
+      imports: [ FormsModule ],
+      declarations: [ ContactComponent ],
+      providers: [
+        { provide: NavigationService, useClass: NavigationServiceMock },
+      ]
     })
     .compileComponents();
 
