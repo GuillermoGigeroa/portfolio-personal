@@ -3,6 +3,9 @@ import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 import { DataService } from './shared/services/data.service';
 import { DataServiceMock } from './shared/mocks/data.service.mock';
+import { SkillsComponent } from './components/skills/skills.component';
+import { PagesComponent } from './components/pages/pages.component';
+import { ContactComponent } from './components/contact/contact.component';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -11,13 +14,13 @@ describe('AppComponent', () => {
         RouterTestingModule
       ],
       declarations: [
-        AppComponent
+        AppComponent,
+        SkillsComponent,
+        PagesComponent,
+        ContactComponent,
       ],
       providers: [
-        {
-          provide: DataService,
-          useClass: DataServiceMock,
-        },
+        { provide: DataService, useClass: DataServiceMock },
       ]
     }).compileComponents();
   });

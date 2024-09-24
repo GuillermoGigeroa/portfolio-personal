@@ -12,8 +12,6 @@ export class PagesComponent {
   showMenu = false;
   constructor(
     private dataService: DataService,
-    private navigationService: NavigationService,
-    private utilsService: UtilsService,
   ) {}
 
   toggleMenu() {
