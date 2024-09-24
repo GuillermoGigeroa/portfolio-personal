@@ -8,10 +8,10 @@ export class DataServiceMock {
     getStatus(): boolean {
         return false;
     }
-    setStatic(option: boolean): void {
+    setStatic(): void {
         return;
     }
-    setMessage(message?: string): void {
+    setMessage(): void {
         return;
     }
     clean(): void {

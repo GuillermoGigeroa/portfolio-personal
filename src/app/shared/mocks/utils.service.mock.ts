@@ -7,16 +7,16 @@ export class UtilsServiceMock {
     sleep(s: number): Promise<unknown> {
         return new Promise((resolve) => setTimeout(resolve, s));
     }
-    getDaysRemaining(endDate: Date): Observable<number> {
+    getDaysRemaining(): Observable<number> {
         return of(1);
     }
-    getHoursRemaining(endDate: Date): Observable<number> {
+    getHoursRemaining(): Observable<number> {
         return of(1);
     }
-    getMinutesRemaining(endDate: Date): Observable<number> {
+    getMinutesRemaining(): Observable<number> {
         return of(1);
     }
-    getSecondsRemaining(endDate: Date): Observable<number> {
+    getSecondsRemaining(): Observable<number> {
         return of(1);
     }
 }

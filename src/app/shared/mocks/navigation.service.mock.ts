@@ -1,11 +1,11 @@
 export class NavigationServiceMock {
-    navigateTo(page: string): void {
+    navigateTo(): void {
         return;
     }
     reloadPage(): void {
         return;
     }
-    openExternal(url: string): void {
+    openExternal(): void {
         return;
     }
 }
