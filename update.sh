@@ -1,1 +1,1 @@
-npm run build;git add docs;git commit -m "archivos compilados";git push;
+npm run build;git add .;git commit -m "update files";git push;
