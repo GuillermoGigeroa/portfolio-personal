@@ -12,7 +12,7 @@
                 <label for="mensaje">Mensaje: </label>
             </li>
             <li>
-                <textarea [(ngModel)]="message" id="mensaje" name="Mensaje" placeholder="Aquí ingresa tu mensaje, y luego presiona contactar."></textarea>
+                <textarea [(ngModel)]="message" (ngModelChange)="saveData()" id="mensaje" name="Mensaje" placeholder="Aquí ingresa tu mensaje, y luego presiona contactar."></textarea>
             </li>
         </ul>
         <ul>

@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { Constants } from 'src/app/shared/model/constants.enum';
 import { NavigationService } from 'src/app/shared/services/navigation.service';
 
 @Component({
@@ -6,18 +7,18 @@ import { NavigationService } from 'src/app/shared/services/navigation.service';
   templateUrl: './contact.component.html',
   styleUrls: ['./contact.component.scss']
 })
-export class ContactComponent {
-  readonly messageDefault = 'Hola, he visto tu web y quiero hablar contigo.';
-  readonly whatsappBase = 'https://api.whatsapp.com/send?phone=541169221781';
-  readonly emailBase = 'mailto:guillermo.gigeroa@hotmail.com?subject=Contacto por web&';
-  readonly keyMessage = '&text=';
-
+export class ContactComponent implements OnInit {
+  constants = Constants;
   showMenu = false;
   message?: string;
 
   constructor(
     private navigationService: NavigationService,
   ) {}
+
+  ngOnInit(): void {
+    this.loadData();
+  }
 
   toggleMenu() {
     this.showMenu = !this.showMenu;
@@ -26,12 +27,12 @@ export class ContactComponent {
   sendMessage(type: string) {
     switch (type)
     {
-      case 'whatsapp':
+      case (this.constants.WHATSAPP_LABEL):
         {
           this.sendWhatsapp();
           break;
         }
-      case 'email':
+      case (this.constants.EMAIL_LABEL):
         {
           this.sendEmail();
           break;
@@ -41,13 +42,22 @@ export class ContactComponent {
     }
   }
 
+  saveData() {
+    localStorage.setItem(this.constants.MESSAGE_KEY, this.message ? this.message : '');
+  }
+
+  loadData() {
+    const localMessage = localStorage.getItem(this.constants.MESSAGE_KEY);
+    this.message = localMessage ? localMessage : undefined;
+  }
+
   private sendWhatsapp() {
-    const link = this.whatsappBase + this.keyMessage + (this.message !== undefined ? this.message : this.messageDefault);
+    const link = this.constants.WHATSAPP_BASE + this.constants.MESSAGE_CONNECTOR + (this.message !== undefined ? this.message : this.constants.MESSAGE_DEFAULT);
     this.navigationService.openExternal(link);
   }
 
   private sendEmail() {
-    const link = this.emailBase + this.keyMessage + (this.message !== undefined ? this.message : this.messageDefault);
+    const link = this.constants.EMAIL_BASE + this.constants.MESSAGE_CONNECTOR + (this.message !== undefined ? this.message : this.constants.MESSAGE_DEFAULT);
     this.navigationService.openExternal(link);
   }
 
