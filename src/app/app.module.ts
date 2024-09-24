@@ -24,12 +24,6 @@ import { FormsModule } from '@angular/forms';
     SharedModule,
     FormsModule,
   ],
-  exports: [
-    BrowserModule,
-    AppRoutingModule,
-    SharedModule,
-    FormsModule,
-  ],
   providers: [
     DataService,
     NavigationService,
