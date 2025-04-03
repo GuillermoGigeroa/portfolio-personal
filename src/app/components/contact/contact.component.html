@@ -1,6 +1,10 @@
 <div class="banner">
     <h4>Contacto</h4>
-    <button id="contacto" class="btnMouse" (click)="toggleMenu()">{{showMenu ? '-' : '+'}}</button>
+    <button
+        class="btn btn-outline-light"
+        (click)="toggleMenu()">
+        {{showMenu ? '↑' : '↓'}}
+    </button>
 </div>
 <section 
     [ngClass]="{'showMenu': showMenu, 'hideMenu': !showMenu}"    
@@ -12,16 +16,29 @@
                 <label for="mensaje">Mensaje: </label>
             </li>
             <li>
-                <textarea [(ngModel)]="message" (ngModelChange)="saveData()" id="mensaje" name="Mensaje" placeholder="Aquí ingresa tu mensaje, y luego presiona contactar."></textarea>
+                <textarea
+                    [(ngModel)]="message"
+                    (ngModelChange)="saveData()"
+                    placeholder="Aquí ingresa tu mensaje, y luego presiona contactar."
+                    class="form-control">
+                </textarea>
             </li>
         </ul>
         <ul>
-            <li class="textoIzquierda"></li>
             <li>
-                <button class="boton contactar" id="contactar" (click)="sendMessage('whatsapp')">Contactar por WhatsApp</button>
+                <button
+                    class="btn btn-dark"
+                    (click)="sendMessage('whatsapp')">
+                    Contactar por WhatsApp
+                </button>
             </li>
+            <br>
             <li>
-                <button class="boton contactar" id="email" (click)="sendMessage('email')">Contactar por email</button>
+                <button
+                class="btn btn-dark" 
+                (click)="sendMessage('email')">
+                Contactar por email
+            </button>
             </li>
         </ul>
     </div>

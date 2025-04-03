@@ -1,6 +1,10 @@
 <div class="banner">
     <h4>Mis habilidades</h4>
-    <button id="datos" class="btnMouse" (click)="toggleMenu()">{{showMenu ? '-' : '+'}}</button>
+    <button
+        class="btn btn-outline-light"
+        (click)="toggleMenu()">
+        {{showMenu ? '↑' : '↓'}}
+    </button>
 </div>
 <div
     [ngClass]="{'showMenu': showMenu, 'hideMenu': !showMenu}"
