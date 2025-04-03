@@ -2,9 +2,10 @@ import { Component } from '@angular/core';
 import { DataService } from 'src/app/shared/services/data.service';
 
 @Component({
-  selector: 'app-pages',
-  templateUrl: './pages.component.html',
-  styleUrls: ['./pages.component.scss']
+    selector: 'app-pages',
+    templateUrl: './pages.component.html',
+    styleUrls: ['./pages.component.scss'],
+    standalone: false
 })
 export class PagesComponent {
   showMenu = false;

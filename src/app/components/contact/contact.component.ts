@@ -3,9 +3,10 @@ import { Constants } from 'src/app/shared/model/constants.enum';
 import { NavigationService } from 'src/app/shared/services/navigation.service';
 
 @Component({
-  selector: 'app-contact',
-  templateUrl: './contact.component.html',
-  styleUrls: ['./contact.component.scss']
+    selector: 'app-contact',
+    templateUrl: './contact.component.html',
+    styleUrls: ['./contact.component.scss'],
+    standalone: false
 })
 export class ContactComponent implements OnInit {
   constants = Constants;
