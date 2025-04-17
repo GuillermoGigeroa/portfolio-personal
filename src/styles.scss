@@ -1,12 +1,24 @@
 @use "assets/scss/styles";
 
 body {
-    background: black;
-    background-image: url(assets/images/space.jpg);
-    background-size: contain;
     color: white;
     padding: 0;
     margin: 0;
+    background: black;
+    background-image: url(assets/images/space.png);
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: 0 0;
+    animation: moveBackground 30s linear infinite;
+}
+
+@keyframes moveBackground {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 300px 1000px;
+    }
 }
 
 .banner .btn {

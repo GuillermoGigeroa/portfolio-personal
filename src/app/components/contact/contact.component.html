@@ -1,44 +1,32 @@
 <div class="banner">
     <h4 class="banner-title">Contacto</h4>
-    <button
-        class="btn btn-outline-light"
-        (click)="toggleMenu()">
+    <button class="btn btn-outline-light" (click)="toggleMenu()">
         {{showMenu ? '↑' : '↓'}}
     </button>
 </div>
-<section 
-    [ngClass]="{'showMenu': showMenu, 'hideMenu': !showMenu}"    
-    class="formulario"
-    id="contenidoContacto">
+<section [ngClass]="{'showMenu': showMenu, 'hideMenu': !showMenu}" class="formulario" id="contenidoContacto">
     <div>
         <ul>
             <li class="textoIzquierda">
                 <label for="mensaje">Mensaje: </label>
             </li>
             <li>
-                <textarea
-                    [(ngModel)]="message"
-                    (ngModelChange)="saveData()"
-                    placeholder="Aquí ingresa tu mensaje, y luego presiona contactar."
-                    class="form-control">
+                <textarea [(ngModel)]="message" (ngModelChange)="saveData()"
+                    placeholder="Aquí ingresa tu mensaje, y luego presiona contactar." class="form-control">
                 </textarea>
             </li>
         </ul>
         <ul>
             <li>
-                <button
-                    class="btn btn-dark"
-                    (click)="sendMessage('whatsapp')">
+                <button class="btn btn-dark" (click)="sendMessage('whatsapp')">
                     Contactar por WhatsApp
                 </button>
             </li>
             <br>
             <li>
-                <button
-                class="btn btn-dark" 
-                (click)="sendMessage('email')">
-                Contactar por email
-            </button>
+                <button class="btn btn-dark" (click)="sendMessage('email')">
+                    Contactar por email
+                </button>
             </li>
         </ul>
     </div>
