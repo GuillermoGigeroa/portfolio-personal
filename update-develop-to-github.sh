@@ -1,0 +1,1 @@
+npm run build;git add .;git commit -m "update files";git push;git checkout github-pages;git merge develop;git push;git checkout develop;
