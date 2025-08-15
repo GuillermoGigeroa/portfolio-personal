@@ -52,13 +52,21 @@ export class ContactComponent implements OnInit {
     this.message = localMessage ? localMessage : undefined;
   }
 
+  private getEncodedMessage(): string {
+    return encodeURIComponent(this.message ?? this.constants.MESSAGE_DEFAULT);
+  }
+
   private sendWhatsapp() {
-    const link = this.constants.WHATSAPP_BASE + this.constants.MESSAGE_CONNECTOR + (this.message !== undefined ? this.message : this.constants.MESSAGE_DEFAULT);
+    const link = this.constants.WHATSAPP_BASE +
+      this.constants.MESSAGE_CONNECTOR +
+      this.getEncodedMessage();
     this.navigationService.openExternal(link);
   }
 
   private sendEmail() {
-    const link = this.constants.EMAIL_BASE + this.constants.MESSAGE_CONNECTOR + (this.message !== undefined ? this.message : this.constants.MESSAGE_DEFAULT);
+    const link = this.constants.EMAIL_BASE +
+      this.constants.MESSAGE_CONNECTOR +
+      this.getEncodedMessage();
     this.navigationService.openExternal(link);
   }
 
