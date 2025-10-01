@@ -21,11 +21,28 @@ export class NavigationService {
     try {
       const parsed = new URL(url);
       const allowedProtocols = ['http:', 'https:', 'mailto:'];
-      if (allowedProtocols.includes(parsed.protocol)) {
-        window.open(parsed.href, '_blank', 'noopener,noreferrer');
-      } else {
+      const allowedDomains = [
+        'github.com',
+        'linkedin.com',
+        'instagram.com',
+        'facebook.com',
+        'api.whatsapp.com'
+      ];
+
+      if (!allowedProtocols.includes(parsed.protocol)) {
         console.warn(`Blocked navigation to disallowed protocol: ${parsed.protocol}`);
+        return;
       }
+
+      if (!allowedDomains.some(domain => parsed.hostname.endsWith(domain))) {
+        console.warn(`Blocked navigation to non-whitelisted domain: ${parsed.hostname}`);
+        return;
+      }
+
+      // Sanitize the URL by creating a new one with only the parts we want
+      const sanitizedUrl = new URL(parsed.pathname + parsed.search + parsed.hash, parsed.origin);
+      
+      window.open(sanitizedUrl.href, '_blank', 'noopener,noreferrer');
     } catch (err) {
       console.error('Invalid URL', err);
     }

@@ -44,16 +44,32 @@ export class ContactComponent implements OnInit {
   }
 
   saveData() {
-    localStorage.setItem(this.constants.MESSAGE_KEY, this.message ? this.message : '');
+    try {
+      if (this.message && this.message.length > 1000) {
+        console.warn('Message too long for storage');
+        return;
+      }
+      localStorage.setItem(this.constants.MESSAGE_KEY, this.message || '');
+    } catch (error) {
+      console.error('Error saving to localStorage:', error);
+    }
   }
 
   loadData() {
-    const localMessage = localStorage.getItem(this.constants.MESSAGE_KEY);
-    this.message = localMessage ? localMessage : undefined;
+    try {
+      const localMessage = localStorage.getItem(this.constants.MESSAGE_KEY);
+      this.message = localMessage || undefined;
+    } catch (error) {
+      console.error('Error loading from localStorage:', error);
+      this.message = undefined;
+    }
   }
 
   private getEncodedMessage(): string {
-    return encodeURIComponent(this.message ?? this.constants.MESSAGE_DEFAULT);
+    const sanitizedMessage = this.message ? 
+      this.message.replace(/[<>]/g, '') : 
+      this.constants.MESSAGE_DEFAULT;
+    return encodeURIComponent(sanitizedMessage);
   }
 
   private sendWhatsapp() {
