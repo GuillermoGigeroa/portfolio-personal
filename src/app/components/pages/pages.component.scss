@@ -38,26 +38,6 @@
 	box-shadow: 0 4px 24px 0 #D0AA6E55;
 }
 
-#redesSociales .boton {
-	background: linear-gradient(90deg, #D0AA6E 0%, #4B4B4B 100%);
-	color: #fff;
-	font-weight: 600;
-	border: none;
-	border-radius: 1.5rem;
-	padding: 0.5rem 1.5rem;
-	margin-top: 0.5rem;
-	box-shadow: 0 2px 8px 0 #0003;
-	letter-spacing: 0.5px;
-	font-size: 1rem;
-	transition: background 0.2s, color 0.2s, box-shadow 0.2s;
-}
-
-#redesSociales .boton:hover {
-	background: linear-gradient(90deg, #4B4B4B 0%, #D0AA6E 100%);
-	color: #D0AA6E;
-	box-shadow: 0 4px 16px 0 #D0AA6E33;
-}
-
 @media (max-width: 900px) {
 	#redesSociales ul {
 		flex-direction: column;

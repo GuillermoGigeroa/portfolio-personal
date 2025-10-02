@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { DataService } from 'src/app/shared/services/data.service';
 
 @Component({
     selector: 'app-pages',
@@ -9,9 +8,7 @@ import { DataService } from 'src/app/shared/services/data.service';
 })
 export class PagesComponent {
   showMenu = false;
-  constructor(
-    private dataService: DataService,
-  ) {}
+  constructor() {}
 
   toggleMenu() {
     this.showMenu = !this.showMenu;
