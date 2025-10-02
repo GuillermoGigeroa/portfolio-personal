@@ -1,0 +1,91 @@
+// Rework visual moderno para la sección de contacto
+.contact-section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 2rem;
+	margin: 2rem 0;
+}
+
+.contact-card {
+	background: rgba(30, 30, 40, 0.7);
+	box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+	backdrop-filter: blur(8px);
+	-webkit-backdrop-filter: blur(8px);
+	border-radius: 2rem;
+	border: 1.5px solid rgba(255,255,255,0.18);
+	padding: 2rem 1.5rem;
+	min-width: 260px;
+	max-width: 400px;
+	color: #fff;
+	transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.contact-card:hover {
+	transform: translateY(-8px) scale(1.03);
+	box-shadow: 0 12px 40px 0 rgba(31, 38, 135, 0.45);
+	border: 1.5px solid #D0AA6E;
+}
+
+.contact-card h4 {
+	color: #D0AA6E;
+	margin-bottom: 1rem;
+}
+
+.contact-form label {
+	color: #D0AA6E;
+	font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+	width: 100%;
+	background: rgba(255,255,255,0.08);
+	border: 1.5px solid #fff2;
+	border-radius: 1rem;
+	color: #fff;
+	padding: 0.7rem 1rem;
+	margin-bottom: 1rem;
+	font-size: 1rem;
+	transition: border 0.2s, background 0.2s;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+	border: 1.5px solid #D0AA6E;
+	background: rgba(255,255,255,0.15);
+	outline: none;
+}
+
+.contact-btns {
+	display: flex;
+	gap: 1rem;
+	justify-content: center;
+}
+
+.contact-btns button {
+	background: linear-gradient(90deg, #D0AA6E 0%, #4B4B4B 100%);
+	color: #fff;
+	font-weight: 600;
+	border: none;
+	border-radius: 1.5rem;
+	padding: 0.5rem 1.5rem;
+	box-shadow: 0 2px 8px 0 #0003;
+	letter-spacing: 0.5px;
+	font-size: 1rem;
+	transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+	cursor: pointer;
+}
+
+.contact-btns button:hover {
+	background: linear-gradient(90deg, #4B4B4B 0%, #D0AA6E 100%);
+	color: #D0AA6E;
+	box-shadow: 0 4px 16px 0 #D0AA6E33;
+}
+
+@media (max-width: 900px) {
+	.contact-card {
+		min-width: 180px;
+		padding: 1.2rem 0.7rem;
+	}
+}
