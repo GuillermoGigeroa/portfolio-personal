@@ -1,0 +1,1 @@
+git co update; git pull; git co develop; git merge update; git push; git co update;
