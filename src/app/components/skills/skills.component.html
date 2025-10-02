@@ -6,9 +6,9 @@
 </div>
 <div [ngClass]="{'showMenu': showMenu, 'hideMenu': !showMenu}">
     <div class="skills-section">
-        <div class="skills-card">
-            <h5>Formación académica</h5>
-            <ul class="skills-list">
+        <div class="skills-card" (click)="skill(this.skills[0].name)">
+            <h5>{{this.skills[0].name}}</h5>
+            <ul class="skills-list" [ngClass]="{hide: !(this.skills[0].value)}">
                 <li>
                     Facultad Regional General Pacheco – Pacheco, Buenos Aires.<br>
                     <i>Tecnicatura Universitaria en Programación.</i><br>
@@ -21,9 +21,9 @@
                 </li>
             </ul>
         </div>
-        <div class="skills-card">
-            <h5>Lenguajes y conocimientos técnicos</h5>
-            <ul class="skills-list">
+        <div class="skills-card" (click)="skill(this.skills[1].name)">
+            <h5>{{this.skills[1].name}}</h5>
+            <ul class="skills-list" [ngClass]="{hide: !(this.skills[1].value)}">
                 <li>✔ Angular</li>
                 <li>✔ Java</li>
                 <li>✔ Python</li>
@@ -40,9 +40,9 @@
                 <li>✔ HTML</li>
             </ul>
         </div>
-        <div class="skills-card">
-            <h5>Software</h5>
-            <ul class="skills-list">
+        <div class="skills-card" (click)="skill(this.skills[2].name)">
+            <h5>{{this.skills[2].name}}</h5>
+            <ul class="skills-list" [ngClass]="{hide: !(this.skills[2].value)}">
                 <li>✔ Eclipse</li>
                 <li>✔ Visual Studio Code</li>
                 <li>✔ Postman</li>
@@ -55,32 +55,33 @@
                 <li>✔ Photoshop</li>
             </ul>
         </div>
-        <div class="skills-card">
-            <h5>Paquete Microsoft Office</h5>
-            <ul class="skills-list">
+        <div class="skills-card" (click)="skill(this.skills[3].name)">
+            <h5>{{this.skills[3].name}}</h5>
+            <ul class="skills-list" [ngClass]="{hide: !(this.skills[3].value)}">
                 <li>✔ Excel</li>
                 <li>✔ Word</li>
                 <li>✔ PowerPoint</li>
                 <li>✔ Outlook</li>
             </ul>
         </div>
-        <div class="skills-card">
-            <h5>Sistemas Operativos</h5>
-            <ul class="skills-list">
-                <li>✔ Microsoft Windows: 98, XP, Vista, Server, 7, 8, 10, 11<br>GUI & CLI: PowerShell, CMD, Bash</li>
+        <div class="skills-card" (click)="skill(this.skills[4].name)">
+            <h5>{{this.skills[4].name}}</h5>
+            <ul class="skills-list" [ngClass]="{hide: !(this.skills[4].value)}">
+                <li>✔ Microsoft Windows: 98, XP, Vista, Server, 7, 8, 10, 11<br>GUI & CLI: PowerShell, CMD, Bash
+                </li>
                 <li>✔ Linux: Debian, Porteus, Mint, Android<br>GUI & CLI: Bash.</li>
             </ul>
         </div>
-        <div class="skills-card">
-            <h5>Idiomas</h5>
-            <ul class="skills-list">
+        <div class="skills-card" (click)="skill(this.skills[5].name)">
+            <h5>{{this.skills[5].name}}</h5>
+            <ul class="skills-list" [ngClass]="{hide: !(this.skills[5].value)}">
                 <li>✔ Español (Nativo)</li>
                 <li>✔ Inglés (Técnico)</li>
             </ul>
         </div>
-        <div class="skills-card">
-            <h5>Más conocimientos</h5>
-            <ul class="skills-list">
+        <div class="skills-card" (click)="skill(this.skills[6].name)">
+            <h5>{{this.skills[6].name}}</h5>
+            <ul class="skills-list" [ngClass]="{hide: !(this.skills[6].value)}">
                 <li>✔ Visual Basic Scripting.</li>
                 <li>✔ Visual Basic for Aplications en Microsoft Excel.</li>
                 <li>✔ Mecanografía de alta velocidad.</li>
