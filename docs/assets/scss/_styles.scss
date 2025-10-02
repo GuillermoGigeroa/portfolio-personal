@@ -182,18 +182,6 @@ section ul>li>ul>li>ul {
     padding-bottom: 5px;
 }
 
-.boton {
-    color: white;
-    font-weight: bold;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 12px;
-    padding-right: 12px;
-    border-style: solid;
-    border-width: 1px;
-    border-radius: 5px;
-}
-
 .btnMouse {
     cursor: pointer;
     align-self: center;
@@ -333,4 +321,23 @@ section ul>li>ul>li>ul {
 .hideMenu {
     position: absolute;
     left: -500em;
+}
+
+.btn-dark {
+    opacity: .8;
+	background: rgba(0,0,0,1);
+	color: #ffffff;
+	font-weight: 600;
+	border: none;
+	border-radius: 1.5rem;
+	padding: 0.5rem 1.5rem;
+	margin-top: 0.5rem;
+	letter-spacing: 0.5px;
+	font-size: 1rem;
+}
+
+.btn-dark:hover {
+    transition: .5s;
+	background: #ffffff;
+	color: #000000;
 }
