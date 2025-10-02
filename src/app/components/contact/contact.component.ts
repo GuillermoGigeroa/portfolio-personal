@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Constants } from 'src/app/shared/model/constants.enum';
+import { DataSecureService } from 'src/app/shared/services/dataSecure.service';
 import { NavigationService } from 'src/app/shared/services/navigation.service';
 
 @Component({
@@ -15,6 +16,7 @@ export class ContactComponent implements OnInit {
 
   constructor(
     private navigationService: NavigationService,
+    private dataSecure: DataSecureService,
   ) {}
 
   ngOnInit(): void {
@@ -49,18 +51,18 @@ export class ContactComponent implements OnInit {
         console.warn('Message too long for storage');
         return;
       }
-      localStorage.setItem(this.constants.MESSAGE_KEY, this.message || '');
+      this.dataSecure.save(this.constants.MESSAGE_KEY, this.message || '');
     } catch (error) {
-      console.error('Error saving to localStorage:', error);
+      console.error('Error saving data:', error);
     }
   }
 
   loadData() {
     try {
-      const localMessage = localStorage.getItem(this.constants.MESSAGE_KEY);
-      this.message = localMessage || undefined;
+      const localMessage = this.dataSecure.get(this.constants.MESSAGE_KEY);
+      this.message = localMessage;
     } catch (error) {
-      console.error('Error loading from localStorage:', error);
+      console.error('Error loading data:', error);
       this.message = undefined;
     }
   }
