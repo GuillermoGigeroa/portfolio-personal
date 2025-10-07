@@ -5,21 +5,21 @@ export class Data {
 }
 
 @Component({
-    selector: 'app-skills',
-    templateUrl: './skills.component.html',
-    styleUrls: ['./skills.component.scss'],
-    standalone: false
+  selector: 'app-skills',
+  templateUrl: './skills.component.html',
+  styleUrls: ['./skills.component.scss'],
+  standalone: false,
 })
 export class SkillsComponent {
   showMenu = false;
   skills: Data[] = [
-    new Data('Formación académica', false),
-    new Data('Lenguajes y conocimientos técnicos', false),
-    new Data('Software', false),
-    new Data('Paquete Microsoft Office', false),
-    new Data('Sistemas Operativos', false),
-    new Data('Idiomas', false),
-    new Data('Más conocimientos', false),
+    new Data('Formación académica', true),
+    new Data('Lenguajes y conocimientos técnicos', true),
+    new Data('Software', true),
+    new Data('Paquete Microsoft Office', true),
+    new Data('Sistemas Operativos', true),
+    new Data('Idiomas', true),
+    new Data('Más conocimientos', true),
   ];
 
   toggleMenu() {
@@ -31,9 +31,9 @@ export class SkillsComponent {
   }
 
   private toggle(name: string, status?: boolean) {
-    this.skills.forEach(element => {
+    this.skills.forEach((element) => {
       if (element.name === name) {
-        element.value = (status !== undefined ? status : !element.value);
+        element.value = status !== undefined ? status : !element.value;
       }
     });
   }
