@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve --port 4200 --disable-host-check true --host 0.0.0.0 -o",
-    "start-proxy": "ng serve --proxy-config proxy.conf.json --port 4200 --disable-host-check true --host 0.0.0.0 -o",
+    "start": "ng serve -o",
+    "start-proxy": "ng serve --proxy-config proxy.conf.json -o",
     "build": "ng build --base-href /portfolio-personal/",
     "lint": "ng lint",
     "watch": "ng build --watch --configuration development",
