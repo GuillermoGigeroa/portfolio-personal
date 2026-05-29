@@ -1,94 +1,85 @@
 # Portfolio Personal
 
-Este es mi portfolio personal, una aplicación web desarrollada con Angular que muestra mis habilidades, experiencia y proyectos.
+Este es mi portfolio personal — una aplicación web desarrollada con Angular que muestra habilidades, experiencia y proyectos.
 
-## 🌐 Acceso
+Demo en vivo: https://guillermogigeroa.github.io/portfolio-personal/
 
-Puedes acceder a mi portfolio en [https://guillermogigeroa.github.io/portfolio-personal/](https://guillermogigeroa.github.io/portfolio-personal/)
+## Tecnologías principales
 
-## 🛠️ Tecnologías
-
-- **Framework**: Angular 19.2.5
-- **Node**: 18.19.1
-- **Package Manager**: npm 10.2.4
-- **Estilado**: Bootstrap 5.2.3 + SCSS
+- **Framework**: Angular 21.2.15
+- **Node**: Recomendado >=18
+- **Package Manager**: npm
+- **Estilos**: Bootstrap 5.2.3 + SCSS
 - **Testing**: Jasmine + Karma
 
-## 📋 Características
+## Estado del proyecto
 
-- **Diseño Responsivo**: Adaptable a dispositivos móviles y escritorio
-- **Secciones Principales**:
-  - 🎯 Habilidades y formación académica
-  - 🔗 Enlaces a redes sociales y proyectos
-  - 📞 Formulario de contacto con integración WhatsApp/Email
-- **Persistencia Local**: Almacenamiento de mensajes en localStorage
-- **Navegación Segura**: Validación de URLs externas
-- **Arquitectura Modular**: Componentes reutilizables y servicios especializados
+- **Versión del proyecto**: 2.0.0
+- Construido y optimizado para despliegue en GitHub Pages (`docs/`).
 
-## 🚀 Configuración del Entorno
+## Características
 
-### Requisitos Previos
+- Diseño responsivo para móviles y escritorio.
+- Secciones: Habilidades, Proyectos, Contacto.
+- Formulario de contacto con integración de WhatsApp/Email y persistencia local (`localStorage`).
+- Navegación segura y validación de URLs externas.
+- Arquitectura modular con servicios y componentes reutilizables.
 
-- Node.js 18.19.1 o superior
-- Angular CLI 19.2.6
+## Requisitos
 
-### Dependencias Principales
+- Node.js 18 o superior
+- Angular CLI (compatible con la versión del proyecto)
 
-```json
-{
-  "dependencies": {
-    "@angular/core": "^19.2.7",
-    "bootstrap": "^5.2.3",
-    "rxjs": "~7.8.1"
-  }
-}
+## Scripts disponibles
+
+Usar `npm run <script>` desde la raíz del proyecto.
+
+- `start`: Inicia servidor de desarrollo (ng serve -o)
+- `start-proxy`: Inicia con configuración de proxy
+- `build`: Genera la versión de producción en `docs/` con `--base-href /portfolio-personal/`
+- `test`: Ejecuta tests unitarios con Karma
+
+Ejemplo:
+
+```bash
+npm install
+npm run start
 ```
 
-## 💻 Scripts Disponibles
-
-- **Desarrollo**: `npm run start`
-  - Inicia servidor en http://localhost:4200
-
-- **Proxy**: `npm run start-proxy`
-  - Similar a `start` pero con configuración de proxy
-
-- **Construcción**: `npm run build`
-  - Genera archivos en directorio `docs/` para GitHub Pages
-  - Configurado con base-href para portfolio-personal
-
-- **Testing**: `npm run test`
-  - Ejecuta tests unitarios con Karma
-  - Configuración para reportes de cobertura
-
-## 🏗️ Estructura del Proyecto
+## Estructura principal
 
 ```
 src/
 ├── app/
 │   ├── components/
-│   │   ├── contact/      # Componente de contacto
-│   │   ├── pages/        # Componente de páginas/links
-│   │   └── skills/       # Componente de habilidades
+│   │   ├── contact/
+│   │   ├── pages/
+│   │   └── skills/
 │   ├── shared/
-│   │   ├── models/       # Interfaces y enums
-│   │   ├── services/     # Servicios compartidos
-│   │   └── mocks/        # Mocks para testing
-│   └── app.module.ts     # Módulo principal
+│   │   ├── model/
+│   │   └── services/
 └── assets/
-    ├── images/           # Recursos gráficos
-    └── scss/            # Estilos globales
+    ├── images/
+    └── scss/
 ```
 
-## 📱 Características Móviles
+## Deploy
 
-- Detección automática de dispositivos móviles
-- Interfaz adaptativa
-- Menús colapsables para mejor navegación
-- Integración con apps nativas (WhatsApp/Email)
+El proyecto está configurado para desplegarse en GitHub Pages. Ejecutar:
 
-## 🔒 Seguridad
+```bash
+npm run build
+# Publicar el contenido de la carpeta docs/ en la rama gh-pages o servir desde GitHub Pages
+```
 
-- Validación de URLs externas
-- Protección contra inyección de scripts
-- Sanitización de inputs
-- Manejo seguro de navegación externa
+## Contribuciones
+
+Pequeñas mejoras o correcciones son bienvenidas. Abre un issue o un pull request.
+
+## Contacto
+
+Encontrarme en: https://guillermogigeroa.github.io/portfolio-personal/
+
+---
+
+Archivo generado y actualizado automáticamente.
