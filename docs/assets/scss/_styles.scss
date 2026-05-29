@@ -24,8 +24,6 @@ ul {
 }
 
 p {
-    padding-left: 10%;
-    padding-right: 10%;
     margin: auto;
 }
 
@@ -251,6 +249,7 @@ section ul>li>ul>li>ul {
     align-items: center;
     list-style: none;
     margin-top: 0;
+    min-width: max-content;
 }
 
 #contenedorDatos {
