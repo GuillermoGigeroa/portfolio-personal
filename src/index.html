@@ -20,7 +20,150 @@
 
 <!-- Easter egg -->
 <body>
-  <app-root></app-root>
+  <app-root>
+    <!-- Fallback para JavaScript deshabilitado -->
+    <noscript>
+      <style>
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background-color: #2a2a2a; color: #fff; margin: 0; padding: 20px; }
+        #todo { max-width: 1200px; margin: 0 auto; }
+        .notice { background-color: #1a3a52; border-left: 4px solid #0a8cff; padding: 15px 20px; margin-bottom: 30px; border-radius: 4px; line-height: 1.6; }
+        .notice strong { color: #0a8cff; }
+        header { text-align: center; margin-bottom: 40px; }
+        #barraPrincipal { display: flex; flex-direction: column; align-items: center; gap: 20px; list-style: none; padding: 0; }
+        #perfilFoto { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; }
+        h1 { font-size: 2.5em; margin: 0; }
+        .textoCentrado { font-size: 1.1em; margin: 10px 0 0 0; }
+        .banner { background-color: #1a1a1a; padding: 15px 20px; margin: 20px 0 15px 0; border-radius: 4px; }
+        .banner-title { margin: 0; font-size: 1.3em; }
+        .skills-section { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding: 20px 0; }
+        .skills-card { background-color: #3a3a3a; padding: 20px; border-radius: 4px; }
+        .skills-card h5 { margin-top: 0; font-size: 1.1em; }
+        .skills-list { list-style: none; padding: 0; margin: 10px 0 0 0; }
+        .skills-list li { padding: 8px 0; line-height: 1.5; }
+        #redesSociales { padding: 20px 0; }
+        #redesSociales > ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 20px; }
+        .carta { list-style: none; padding: 0; display: flex; align-items: center; gap: 10px; }
+        .carta svg { width: 50px; height: 50px; }
+        .btn { display: inline-block; padding: 8px 16px; background-color: #333; color: white; text-decoration: none; border-radius: 4px; border: none; cursor: pointer; }
+        .btn:hover { background-color: #444; }
+        .formulario { background-color: #3a3a3a; padding: 20px; border-radius: 4px; }
+        textarea { padding: 10px; margin: 10px 0; }
+        a { color: #0a8cff; text-decoration: none; }
+        a:hover { text-decoration: underline; }
+      </style>
+      <div id="todo">
+        <div class="notice">
+          <strong>ℹ️ Versión estática del portfolio</strong><br>
+          Este es un proyecto desarrollado en <strong>Angular</strong> que utiliza <strong>JavaScript</strong> para una experiencia interactiva mejorada (con menús expandibles, efectos, y mejor funcionalidad). Sin embargo, estás viendo una <strong>versión estática simplificada</strong> porque JavaScript está deshabilitado en tu navegador. Para la mejor experiencia, considera habilitar JavaScript.
+        </div>
+        <header>
+          <section id="barraPrincipal">
+            <img id="perfilFoto" src="assets/images/miFoto.jpg" alt="Guillermo Gigeroa">
+            <h1>Guillermo Gigeroa</h1>
+            <p class="textoCentrado">Técnico Universitario en Programación</p>
+          </section>
+        </header>
+
+        <section>
+          <div class="banner">
+            <h4 class="banner-title">Mis habilidades</h4>
+          </div>
+          <div class="skills-section">
+            <div class="skills-card">
+              <h5>Educación</h5>
+              <ul class="skills-list">
+                <li>Facultad Regional General Pacheco – Pacheco, Buenos Aires.<br><i>Tecnicatura Universitaria en Programación.</i><br>(2019 – 2025)</li>
+                <li>Instituto General Belgrano – Belén de Escobar, Buenos Aires.<br><i>Bachiller en Economía y Administración.</i><br>(2007 – 2013)</li>
+              </ul>
+            </div>
+            <div class="skills-card">
+              <h5>Lenguajes y Tecnologías</h5>
+              <ul class="skills-list">
+                <li>✔ Java</li>
+                <li>✔ Angular</li>
+                <li>✔ Git</li>
+                <li>✔ Python</li>
+                <li>✔ Typescript</li>
+                <li>✔ Javascript</li>
+                <li>✔ Bootstrap</li>
+                <li>✔ HTML</li>
+                <li>✔ CSS</li>
+                <li>✔ SCSS</li>
+                <li>✔ SQL</li>
+                <li>✔ C++</li>
+                <li>✔ C#</li>
+              </ul>
+            </div>
+            <div class="skills-card">
+              <h5>Herramientas</h5>
+              <ul class="skills-list">
+                <li>✔ Visual Studio Code</li>
+                <li>✔ Windsurf</li>
+                <li>✔ Claude</li>
+                <li>✔ Eclipse</li>
+                <li>✔ Postman</li>
+                <li>✔ PyCharm</li>
+                <li>✔ SQL Server</li>
+                <li>✔ Visual Studio .Net</li>
+                <li>✔ CorelDraw</li>
+                <li>✔ Photoshop</li>
+              </ul>
+            </div>
+            <div class="skills-card">
+              <h5>Idiomas</h5>
+              <ul class="skills-list">
+                <li>✔ Español (Nativo)</li>
+                <li>✔ Inglés (Técnico)</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <div class="banner">
+            <h4 class="banner-title">Mis páginas</h4>
+          </div>
+          <section id="redesSociales">
+            <ul>
+              <li>
+                <ul class="carta">
+                  <li><a href="https://github.com/GuillermoGigeroa" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="carta">
+                  <li><a href="https://www.linkedin.com/in/guillermogigeroa" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="carta">
+                  <li><a href="https://www.instagram.com/guille.gigeroa" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                </ul>
+              </li>
+              <li>
+                <ul class="carta">
+                  <li><a href="https://es-la.facebook.com/gigeroa" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+        </section>
+
+        <section>
+          <div class="banner">
+            <h4 class="banner-title">Contacto</h4>
+          </div>
+          <div class="formulario">
+            <p>Para contactarme, utiliza los siguientes medios:</p>
+            <ul style="list-style: none; padding: 0;">
+              <li><strong>WhatsApp:</strong> <a href="https://wa.me/541148483045" target="_blank" rel="noopener noreferrer">+54 11 4848-3045</a></li>
+              <li><strong>Email:</strong> <a href="mailto:guillermo.gigeroa.dev@gmail.com">guillermo.gigeroa.dev@gmail.com</a></li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </noscript>
+  </app-root>
 </body>
 
 </html>
