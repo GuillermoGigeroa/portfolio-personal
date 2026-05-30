@@ -1,6 +1,6 @@
 # Portfolio Personal
 
-Este es mi portfolio personal — una aplicación web desarrollada con Angular que muestra habilidades, experiencia y proyectos.
+Este es mi portfolio personal, una aplicación web desarrollada con Angular que muestra habilidades, experiencia y proyectos.
 
 Demo en vivo: https://guillermogigeroa.github.io/portfolio-personal/
 
@@ -69,7 +69,7 @@ El proyecto está configurado para desplegarse en GitHub Pages. Ejecutar:
 
 ```bash
 npm run build
-# Publicar el contenido de la carpeta docs/ en la rama gh-pages o servir desde GitHub Pages
+# Publicar el contenido de la carpeta docs/ en la rama develop para levantarlo en GitHub Pages
 ```
 
 ## Contribuciones
