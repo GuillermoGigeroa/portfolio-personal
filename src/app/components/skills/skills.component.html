@@ -1,6 +1,6 @@
-<div class="banner">
+<div class="banner" (click)="toggleMenu()">
     <h4 class="banner-title">Mis habilidades</h4>
-    <button class="btn btn-outline-light" (click)="toggleMenu()">
+    <button class="btn btn-outline-light">
         {{showMenu ? '↑' : '↓'}}
     </button>
 </div>
@@ -9,16 +9,14 @@
         <div class="skills-card" (click)="skill(this.skills[0].name)">
             <h5>{{this.skills[0].name}}</h5>
             <ul class="skills-list" [ngClass]="{hide: !(this.skills[0].value)}">
-                <li>
-                    Facultad Regional General Pacheco – Pacheco, Buenos Aires.<br>
-                    <i>Técnico Universitario en Programación.</i><br>
-                    (2019 – 2025)
-                </li>
-                <li>
-                    Instituto General Belgrano – Belén de Escobar, Buenos Aires.<br>
-                    <i>Bachiller en Economía y Administración.</i><br>
-                    (2007 – 2013)
-                </li>
+                <li>Facultad Regional General Pacheco – Pacheco, Buenos Aires.</li>
+                <li><i>Técnico Universitario en Programación.</i></li>
+                <li>(2019 – 2025)</li>
+            </ul>
+            <ul class="skills-list" [ngClass]="{hide: !(this.skills[0].value)}">
+                <li>Instituto General Belgrano – Belén de Escobar, Buenos Aires.</li>
+                <li><i>Bachiller en Economía y Administración.</i></li>
+                <li>(2007 – 2013)</li>
             </ul>
         </div>
         <div class="skills-card" (click)="skill(this.skills[1].name)">
@@ -31,7 +29,7 @@
                 <li>✔ Typescript</li>
                 <li>✔ Javascript</li>
                 <li>✔ Boostrap</li>
-                <li>✔ Ingeniería de software con IA</li>
+                <li>✔ IA Prompting</li>
                 <li>✔ HTML</li>
                 <li>✔ CSS</li>
                 <li>✔ SCSS</li>
@@ -56,38 +54,33 @@
                 <li>✔ SQL Server</li>
                 <li>✔ Code::Blocks</li>
                 <li>✔ SharpDevelop</li>
-                <li>✔ Visual Studio .Net framework</li>
+                <li>✔ .Net framework</li>
                 <li>✔ CorelDraw</li>
                 <li>✔ Photoshop</li>
-            </ul>
-        </div>
-        <div class="skills-card" (click)="skill(this.skills[3].name)">
-            <h5>{{this.skills[3].name}}</h5>
-            <ul class="skills-list" [ngClass]="{hide: !(this.skills[3].value)}">
                 <li>✔ Excel</li>
                 <li>✔ Word</li>
                 <li>✔ PowerPoint</li>
                 <li>✔ Outlook</li>
             </ul>
         </div>
-        <div class="skills-card" (click)="skill(this.skills[4].name)">
-            <h5>{{this.skills[4].name}}</h5>
-            <ul class="skills-list" [ngClass]="{hide: !(this.skills[4].value)}">
+        <div class="skills-card" (click)="skill(this.skills[3].name)">
+            <h5>{{this.skills[3].name}}</h5>
+            <ul class="skills-list" [ngClass]="{hide: !(this.skills[3].value)}">
                 <li>✔ Microsoft Windows: 98, XP, Vista, Server, 7, 8, 10, 11<br>GUI & CLI: PowerShell, CMD, Bash
                 </li>
                 <li>✔ Linux: Debian, Porteus, Mint, Android<br>GUI & CLI: Bash.</li>
             </ul>
         </div>
-        <div class="skills-card" (click)="skill(this.skills[5].name)">
-            <h5>{{this.skills[5].name}}</h5>
-            <ul class="skills-list" [ngClass]="{hide: !(this.skills[5].value)}">
+        <div class="skills-card" (click)="skill(this.skills[4].name)">
+            <h5>{{this.skills[4].name}}</h5>
+            <ul class="skills-list" [ngClass]="{hide: !(this.skills[4].value)}">
                 <li>✔ Español (Nativo)</li>
                 <li>✔ Inglés (Técnico)</li>
             </ul>
         </div>
-        <div class="skills-card" (click)="skill(this.skills[6].name)">
-            <h5>{{this.skills[6].name}}</h5>
-            <ul class="skills-list" [ngClass]="{hide: !(this.skills[6].value)}">
+        <div class="skills-card" (click)="skill(this.skills[5].name)">
+            <h5>{{this.skills[5].name}}</h5>
+            <ul class="skills-list" [ngClass]="{hide: !(this.skills[5].value)}">
                 <li>✔ Ingeniería de prompts de IA avanzado.</li>
                 <li>✔ Visual Basic Scripting.</li>
                 <li>✔ Visual Basic for Aplications en Microsoft Excel.</li>

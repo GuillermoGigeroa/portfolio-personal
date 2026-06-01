@@ -13,7 +13,7 @@
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
     backdrop-filter: blur(8px);
     -webkit-backdrop-filter: blur(8px);
-    border-radius: 2rem;
+    border-radius: 1rem;
     border: 1.5px solid rgba(255,255,255,0.18);
     padding: 2rem 1.5rem;
     min-width: 220px;
@@ -37,17 +37,14 @@
     list-style: none;
     padding: 0;
     margin: 0;
+    border-top: 1px solid #fff1;
+    border-bottom: 1px solid #fff1;
 }
 
 .skills-list li {
     padding: 0.3rem 0;
     font-size: 1.1rem;
     letter-spacing: 0.5px;
-    border-bottom: 1px solid #fff1;
-}
-
-.skills-list li:last-child {
-    border-bottom: none;
 }
 
 @media (max-width: 900px) {

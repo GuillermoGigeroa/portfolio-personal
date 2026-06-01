@@ -15,8 +15,7 @@ export class SkillsComponent {
   skills: Data[] = [
     new Data('Formación académica', true),
     new Data('Lenguajes y tecnologías que uso', true),
-    new Data('Software', true),
-    new Data('Paquete Microsoft Office', true),
+    new Data('Herramientas que utilizo', true),
     new Data('Sistemas Operativos', true),
     new Data('Idiomas que conozco', true),
     new Data('Más conocimientos', true),

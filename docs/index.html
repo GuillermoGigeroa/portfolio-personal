@@ -15,49 +15,212 @@
                  form-action 'none';
                  base-uri 'self';">
   <link rel="icon" type="image/x-icon" href="favicon.ico">
-<style>:root{--bs-blue:#0d6efd;--bs-indigo:#6610f2;--bs-purple:#6f42c1;--bs-pink:#d63384;--bs-red:#dc3545;--bs-orange:#fd7e14;--bs-yellow:#ffc107;--bs-green:#198754;--bs-teal:#20c997;--bs-cyan:#0dcaf0;--bs-black:#000;--bs-white:#fff;--bs-gray:#6c757d;--bs-gray-dark:#343a40;--bs-gray-100:#f8f9fa;--bs-gray-200:#e9ecef;--bs-gray-300:#dee2e6;--bs-gray-400:#ced4da;--bs-gray-500:#adb5bd;--bs-gray-600:#6c757d;--bs-gray-700:#495057;--bs-gray-800:#343a40;--bs-gray-900:#212529;--bs-primary:#0d6efd;--bs-secondary:#6c757d;--bs-success:#198754;--bs-info:#0dcaf0;--bs-warning:#ffc107;--bs-danger:#dc3545;--bs-light:#f8f9fa;--bs-dark:#212529;--bs-primary-rgb:13,110,253;--bs-secondary-rgb:108,117,125;--bs-success-rgb:25,135,84;--bs-info-rgb:13,202,240;--bs-warning-rgb:255,193,7;--bs-danger-rgb:220,53,69;--bs-light-rgb:248,249,250;--bs-dark-rgb:33,37,41;--bs-primary-text-emphasis:#052c65;--bs-secondary-text-emphasis:#2b2f32;--bs-success-text-emphasis:#0a3622;--bs-info-text-emphasis:#055160;--bs-warning-text-emphasis:#664d03;--bs-danger-text-emphasis:#58151c;--bs-light-text-emphasis:#495057;--bs-dark-text-emphasis:#495057;--bs-primary-bg-subtle:#cfe2ff;--bs-secondary-bg-subtle:#e2e3e5;--bs-success-bg-subtle:#d1e7dd;--bs-info-bg-subtle:#cff4fc;--bs-warning-bg-subtle:#fff3cd;--bs-danger-bg-subtle:#f8d7da;--bs-light-bg-subtle:#fcfcfd;--bs-dark-bg-subtle:#ced4da;--bs-primary-border-subtle:#9ec5fe;--bs-secondary-border-subtle:#c4c8cb;--bs-success-border-subtle:#a3cfbb;--bs-info-border-subtle:#9eeaf9;--bs-warning-border-subtle:#ffe69c;--bs-danger-border-subtle:#f1aeb5;--bs-light-border-subtle:#e9ecef;--bs-dark-border-subtle:#adb5bd;--bs-white-rgb:255,255,255;--bs-black-rgb:0,0,0;--bs-font-sans-serif:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;--bs-gradient:linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));--bs-body-font-family:var(--bs-font-sans-serif);--bs-body-font-size:1rem;--bs-body-font-weight:400;--bs-body-line-height:1.5;--bs-body-color:#212529;--bs-body-color-rgb:33,37,41;--bs-body-bg:#fff;--bs-body-bg-rgb:255,255,255;--bs-emphasis-color:#000;--bs-emphasis-color-rgb:0,0,0;--bs-secondary-color:rgba(33, 37, 41, .75);--bs-secondary-color-rgb:33,37,41;--bs-secondary-bg:#e9ecef;--bs-secondary-bg-rgb:233,236,239;--bs-tertiary-color:rgba(33, 37, 41, .5);--bs-tertiary-color-rgb:33,37,41;--bs-tertiary-bg:#f8f9fa;--bs-tertiary-bg-rgb:248,249,250;--bs-heading-color:inherit;--bs-link-color:#0d6efd;--bs-link-color-rgb:13,110,253;--bs-link-decoration:underline;--bs-link-hover-color:#0a58ca;--bs-link-hover-color-rgb:10,88,202;--bs-code-color:#d63384;--bs-highlight-color:#212529;--bs-highlight-bg:#fff3cd;--bs-border-width:1px;--bs-border-style:solid;--bs-border-color:#dee2e6;--bs-border-color-translucent:rgba(0, 0, 0, .175);--bs-border-radius:.375rem;--bs-border-radius-sm:.25rem;--bs-border-radius-lg:.5rem;--bs-border-radius-xl:1rem;--bs-border-radius-xxl:2rem;--bs-border-radius-2xl:var(--bs-border-radius-xxl);--bs-border-radius-pill:50rem;--bs-box-shadow:0 .5rem 1rem rgba(0, 0, 0, .15);--bs-box-shadow-sm:0 .125rem .25rem rgba(0, 0, 0, .075);--bs-box-shadow-lg:0 1rem 3rem rgba(0, 0, 0, .175);--bs-box-shadow-inset:inset 0 1px 2px rgba(0, 0, 0, .075);--bs-focus-ring-width:.25rem;--bs-focus-ring-opacity:.25;--bs-focus-ring-color:rgba(13, 110, 253, .25);--bs-form-valid-color:#198754;--bs-form-valid-border-color:#198754;--bs-form-invalid-color:#dc3545;--bs-form-invalid-border-color:#dc3545}*,:after,:before{box-sizing:border-box}@media(prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:var(--bs-body-font-family);font-size:var(--bs-body-font-size);font-weight:var(--bs-body-font-weight);line-height:var(--bs-body-line-height);color:var(--bs-body-color);text-align:var(--bs-body-text-align);background-color:var(--bs-body-bg);-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}h1,h4{margin-top:0;margin-bottom:.5rem;font-weight:500;line-height:1.2;color:var(--bs-heading-color)}h1{font-size:calc(1.375rem + 1.5vw)}@media(min-width:1200px){h1{font-size:2.5rem}}h4{font-size:calc(1.275rem + .3vw)}@media(min-width:1200px){h4{font-size:1.5rem}}p{margin-top:0;margin-bottom:1rem}ul{padding-left:2rem}ul{margin-top:0;margin-bottom:1rem}ul ul{margin-bottom:0}strong{font-weight:bolder}a{color:rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));text-decoration:underline}a:hover{--bs-link-color-rgb:var(--bs-link-hover-color-rgb)}a:not([href]):not([class]),a:not([href]):not([class]):hover{color:inherit;text-decoration:none}img{vertical-align:middle}:root{--bs-breakpoint-xs:0;--bs-breakpoint-sm:576px;--bs-breakpoint-md:768px;--bs-breakpoint-lg:992px;--bs-breakpoint-xl:1200px;--bs-breakpoint-xxl:1400px}:root{--bs-btn-close-filter: }:root{--bs-carousel-indicator-active-bg:#fff;--bs-carousel-caption-color:#fff;--bs-carousel-control-icon-filter: }@font-face{font-family:Montserrat;src:url("./media/Montserrat-Italic-VariableFont_wght-OYB3VZ2K.ttf") format("truetype"),url("./media/Montserrat-VariableFont_wght-6WK4HD22.ttf") format("truetype"),url("./media/Montserrat-Black-V3K45DD4.ttf") format("truetype"),url("./media/Montserrat-BlackItalic-VRXHVHS3.ttf") format("truetype"),url("./media/Montserrat-Bold-ABTAPC2V.ttf") format("truetype"),url("./media/Montserrat-BoldItalic-LBTFKCRT.ttf") format("truetype"),url("./media/Montserrat-ExtraBold-3PXI42DS.ttf") format("truetype"),url("./media/Montserrat-ExtraBoldItalic-LDTORKBI.ttf") format("truetype"),url("./media/Montserrat-ExtraLight-ZAVEFSPL.ttf") format("truetype"),url("./media/Montserrat-ExtraLightItalic-OVKRTWWF.ttf") format("truetype"),url("./media/Montserrat-Italic-3PDOTRL6.ttf") format("truetype"),url("./media/Montserrat-Light-VQBDBNAJ.ttf") format("truetype"),url("./media/Montserrat-LightItalic-WJXYFMKH.ttf") format("truetype"),url("./media/Montserrat-Medium-MLSIMEIZ.ttf") format("truetype"),url("./media/Montserrat-MediumItalic-EJ6L53NP.ttf") format("truetype"),url("./media/Montserrat-Regular-KTDWECCU.ttf") format("truetype"),url("./media/Montserrat-SemiBold-SQJZNN4B.ttf") format("truetype"),url("./media/Montserrat-SemiBoldItalic-TVTEZJCL.ttf") format("truetype"),url("./media/Montserrat-Thin-INGLEL72.ttf") format("truetype"),url("./media/Montserrat-ThinItalic-TAM6H7PK.ttf") format("truetype")}*{font-family:Montserrat,sans-serif;transition:.3s}ul{padding:0}p{margin:auto}a{text-decoration:none;color:#fff}a:hover{color:wheat}h1{font-weight:bolder;font-size:xx-large;margin:0;padding-bottom:10px}h4{font-size:x-large;margin:0;padding:5px}ul{list-style:none;padding:0}section{margin:0;padding:0;display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;align-items:center;text-align:center}section ul>li>ul{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center}section ul>li>ul>li{display:flex;justify-content:left;align-items:flex-start;padding-top:2px;width:250px}.carta li{display:flex;justify-content:center;align-items:center;border-width:0}.textoCentrado{text-align:center}.banner{display:flex;flex-direction:row;justify-content:center;align-items:center;background-color:#323232cc;border-top-style:solid;border-left-style:none;border-right-style:none;border-bottom-style:solid;border-color:#464646cc;border-width:2px;margin-top:5px;margin-bottom:5px;color:#fff;padding-top:5px;padding-bottom:5px}#barraPrincipal{background:#323232cc;border-top-style:none;border-left-style:none;border-right-style:none;border-bottom-style:solid;border-color:#464646cc;border-width:2px;color:#fff}#perfilFoto{border-width:2px;border-style:solid;border-radius:200px;width:200px;object-fit:cover}#redesSociales ul{list-style:none;display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;background-color:transparent}#redesSociales ul>li>ul{background:#323232cc;border-radius:25px;display:flex;flex-direction:column;align-items:center;padding:15px;margin:10px}#redesSociales ul>li>ul>li{padding:10px}body{color:#fff;padding:0;margin:0;background:#000;background-image:url("./media/space-light-FGVCCH2A.png");background-repeat:repeat;background-size:auto;background-position:0 0;animation:moveBackground 30s linear infinite}@keyframes moveBackground{0%{background-position:0 0}to{background-position:300px 1000px}}.banner-title{margin-right:10px}</style><link rel="stylesheet" href="styles-DYNMWRNJ.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-DYNMWRNJ.css"></noscript></head>
+<style>:root{--bs-blue:#0d6efd;--bs-indigo:#6610f2;--bs-purple:#6f42c1;--bs-pink:#d63384;--bs-red:#dc3545;--bs-orange:#fd7e14;--bs-yellow:#ffc107;--bs-green:#198754;--bs-teal:#20c997;--bs-cyan:#0dcaf0;--bs-black:#000;--bs-white:#fff;--bs-gray:#6c757d;--bs-gray-dark:#343a40;--bs-gray-100:#f8f9fa;--bs-gray-200:#e9ecef;--bs-gray-300:#dee2e6;--bs-gray-400:#ced4da;--bs-gray-500:#adb5bd;--bs-gray-600:#6c757d;--bs-gray-700:#495057;--bs-gray-800:#343a40;--bs-gray-900:#212529;--bs-primary:#0d6efd;--bs-secondary:#6c757d;--bs-success:#198754;--bs-info:#0dcaf0;--bs-warning:#ffc107;--bs-danger:#dc3545;--bs-light:#f8f9fa;--bs-dark:#212529;--bs-primary-rgb:13,110,253;--bs-secondary-rgb:108,117,125;--bs-success-rgb:25,135,84;--bs-info-rgb:13,202,240;--bs-warning-rgb:255,193,7;--bs-danger-rgb:220,53,69;--bs-light-rgb:248,249,250;--bs-dark-rgb:33,37,41;--bs-primary-text-emphasis:#052c65;--bs-secondary-text-emphasis:#2b2f32;--bs-success-text-emphasis:#0a3622;--bs-info-text-emphasis:#055160;--bs-warning-text-emphasis:#664d03;--bs-danger-text-emphasis:#58151c;--bs-light-text-emphasis:#495057;--bs-dark-text-emphasis:#495057;--bs-primary-bg-subtle:#cfe2ff;--bs-secondary-bg-subtle:#e2e3e5;--bs-success-bg-subtle:#d1e7dd;--bs-info-bg-subtle:#cff4fc;--bs-warning-bg-subtle:#fff3cd;--bs-danger-bg-subtle:#f8d7da;--bs-light-bg-subtle:#fcfcfd;--bs-dark-bg-subtle:#ced4da;--bs-primary-border-subtle:#9ec5fe;--bs-secondary-border-subtle:#c4c8cb;--bs-success-border-subtle:#a3cfbb;--bs-info-border-subtle:#9eeaf9;--bs-warning-border-subtle:#ffe69c;--bs-danger-border-subtle:#f1aeb5;--bs-light-border-subtle:#e9ecef;--bs-dark-border-subtle:#adb5bd;--bs-white-rgb:255,255,255;--bs-black-rgb:0,0,0;--bs-font-sans-serif:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue","Noto Sans","Liberation Sans",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";--bs-font-monospace:SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;--bs-gradient:linear-gradient(180deg, rgba(255, 255, 255, .15), rgba(255, 255, 255, 0));--bs-body-font-family:var(--bs-font-sans-serif);--bs-body-font-size:1rem;--bs-body-font-weight:400;--bs-body-line-height:1.5;--bs-body-color:#212529;--bs-body-color-rgb:33,37,41;--bs-body-bg:#fff;--bs-body-bg-rgb:255,255,255;--bs-emphasis-color:#000;--bs-emphasis-color-rgb:0,0,0;--bs-secondary-color:rgba(33, 37, 41, .75);--bs-secondary-color-rgb:33,37,41;--bs-secondary-bg:#e9ecef;--bs-secondary-bg-rgb:233,236,239;--bs-tertiary-color:rgba(33, 37, 41, .5);--bs-tertiary-color-rgb:33,37,41;--bs-tertiary-bg:#f8f9fa;--bs-tertiary-bg-rgb:248,249,250;--bs-heading-color:inherit;--bs-link-color:#0d6efd;--bs-link-color-rgb:13,110,253;--bs-link-decoration:underline;--bs-link-hover-color:#0a58ca;--bs-link-hover-color-rgb:10,88,202;--bs-code-color:#d63384;--bs-highlight-color:#212529;--bs-highlight-bg:#fff3cd;--bs-border-width:1px;--bs-border-style:solid;--bs-border-color:#dee2e6;--bs-border-color-translucent:rgba(0, 0, 0, .175);--bs-border-radius:.375rem;--bs-border-radius-sm:.25rem;--bs-border-radius-lg:.5rem;--bs-border-radius-xl:1rem;--bs-border-radius-xxl:2rem;--bs-border-radius-2xl:var(--bs-border-radius-xxl);--bs-border-radius-pill:50rem;--bs-box-shadow:0 .5rem 1rem rgba(0, 0, 0, .15);--bs-box-shadow-sm:0 .125rem .25rem rgba(0, 0, 0, .075);--bs-box-shadow-lg:0 1rem 3rem rgba(0, 0, 0, .175);--bs-box-shadow-inset:inset 0 1px 2px rgba(0, 0, 0, .075);--bs-focus-ring-width:.25rem;--bs-focus-ring-opacity:.25;--bs-focus-ring-color:rgba(13, 110, 253, .25);--bs-form-valid-color:#198754;--bs-form-valid-border-color:#198754;--bs-form-invalid-color:#dc3545;--bs-form-invalid-border-color:#dc3545}*,:after,:before{box-sizing:border-box}@media(prefers-reduced-motion:no-preference){:root{scroll-behavior:smooth}}body{margin:0;font-family:var(--bs-body-font-family);font-size:var(--bs-body-font-size);font-weight:var(--bs-body-font-weight);line-height:var(--bs-body-line-height);color:var(--bs-body-color);text-align:var(--bs-body-text-align);background-color:var(--bs-body-bg);-webkit-text-size-adjust:100%;-webkit-tap-highlight-color:transparent}hr{margin:1rem 0;color:inherit;border:0;border-top:var(--bs-border-width) solid;opacity:.25}h1,h4{margin-top:0;margin-bottom:.5rem;font-weight:500;line-height:1.2;color:var(--bs-heading-color)}h1{font-size:calc(1.375rem + 1.5vw)}@media(min-width:1200px){h1{font-size:2.5rem}}h4{font-size:calc(1.275rem + .3vw)}@media(min-width:1200px){h4{font-size:1.5rem}}p{margin-top:0;margin-bottom:1rem}ul{padding-left:2rem}ul{margin-top:0;margin-bottom:1rem}ul ul{margin-bottom:0}strong{font-weight:bolder}a{color:rgba(var(--bs-link-color-rgb),var(--bs-link-opacity,1));text-decoration:underline}a:hover{--bs-link-color-rgb:var(--bs-link-hover-color-rgb)}a:not([href]):not([class]),a:not([href]):not([class]):hover{color:inherit;text-decoration:none}img,svg{vertical-align:middle}:root{--bs-breakpoint-xs:0;--bs-breakpoint-sm:576px;--bs-breakpoint-md:768px;--bs-breakpoint-lg:992px;--bs-breakpoint-xl:1200px;--bs-breakpoint-xxl:1400px}:root{--bs-btn-close-filter: }:root{--bs-carousel-indicator-active-bg:#fff;--bs-carousel-caption-color:#fff;--bs-carousel-control-icon-filter: }@font-face{font-family:Montserrat;src:url("./media/Montserrat-Italic-VariableFont_wght-OYB3VZ2K.ttf") format("truetype"),url("./media/Montserrat-VariableFont_wght-6WK4HD22.ttf") format("truetype"),url("./media/Montserrat-Black-V3K45DD4.ttf") format("truetype"),url("./media/Montserrat-BlackItalic-VRXHVHS3.ttf") format("truetype"),url("./media/Montserrat-Bold-ABTAPC2V.ttf") format("truetype"),url("./media/Montserrat-BoldItalic-LBTFKCRT.ttf") format("truetype"),url("./media/Montserrat-ExtraBold-3PXI42DS.ttf") format("truetype"),url("./media/Montserrat-ExtraBoldItalic-LDTORKBI.ttf") format("truetype"),url("./media/Montserrat-ExtraLight-ZAVEFSPL.ttf") format("truetype"),url("./media/Montserrat-ExtraLightItalic-OVKRTWWF.ttf") format("truetype"),url("./media/Montserrat-Italic-3PDOTRL6.ttf") format("truetype"),url("./media/Montserrat-Light-VQBDBNAJ.ttf") format("truetype"),url("./media/Montserrat-LightItalic-WJXYFMKH.ttf") format("truetype"),url("./media/Montserrat-Medium-MLSIMEIZ.ttf") format("truetype"),url("./media/Montserrat-MediumItalic-EJ6L53NP.ttf") format("truetype"),url("./media/Montserrat-Regular-KTDWECCU.ttf") format("truetype"),url("./media/Montserrat-SemiBold-SQJZNN4B.ttf") format("truetype"),url("./media/Montserrat-SemiBoldItalic-TVTEZJCL.ttf") format("truetype"),url("./media/Montserrat-Thin-INGLEL72.ttf") format("truetype"),url("./media/Montserrat-ThinItalic-TAM6H7PK.ttf") format("truetype")}*{font-family:Montserrat,sans-serif;transition:.3s}ul{padding:0}p{margin:auto}a{text-decoration:none;color:#fff}a:hover{color:wheat}h1{font-weight:bolder;font-size:xx-large;margin:0;padding-bottom:10px}h4{font-size:x-large;margin:0;padding:5px}ul{list-style:none;padding:0}section{margin:0;padding:0;display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;align-items:center;text-align:center}section ul>li>ul{display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center}section ul>li>ul>li{display:flex;justify-content:left;align-items:flex-start;padding-top:2px;width:250px}.carta li{display:flex;justify-content:center;align-items:center;border-width:0}.textoCentrado{text-align:center}.banner{display:flex;flex-direction:row;justify-content:center;align-items:center;background-color:#323232cc;border-top-style:solid;border-left-style:none;border-right-style:none;border-bottom-style:solid;border-color:#464646cc;border-width:2px;margin-top:5px;margin-bottom:5px;color:#fff;padding-top:5px;padding-bottom:5px}#barraPrincipal{background:#323232cc;border-top-style:none;border-left-style:none;border-right-style:none;border-bottom-style:solid;border-color:#464646cc;border-width:2px;color:#fff}#perfilFoto{border-width:2px;border-style:solid;border-radius:200px;width:200px;object-fit:cover}#redesSociales ul{list-style:none;display:flex;flex-direction:row;flex-wrap:wrap;justify-content:center;background-color:transparent}#redesSociales ul>li>ul{background:#323232cc;border-radius:25px;display:flex;flex-direction:column;align-items:center;padding:15px;margin:10px}#redesSociales ul>li>ul>li{padding:10px}body{color:#fff;padding:0;margin:0;background:#000;background-image:url("./media/space-light-FGVCCH2A.png");background-repeat:repeat;background-size:auto;background-position:0 0;animation:moveBackground 30s linear infinite}@keyframes moveBackground{0%{background-position:0 0}to{background-position:300px 1000px}}.banner-title{margin-right:10px}</style><link rel="stylesheet" href="styles-DYNMWRNJ.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles-DYNMWRNJ.css"></noscript></head>
 
 <!-- Easter egg -->
+
 <body>
   <app-root>
     <!-- Fallback para JavaScript deshabilitado -->
     <noscript>
       <style>
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background-color: #2a2a2a; color: #fff; margin: 0; padding: 1em; }
-        header { text-align: center; margin-bottom: 1em; }
-        #todo { display: flex; flex-direction: column; }
-        .notice { background-color: #ffffff; border-left: 4px solid #ff0a0ac0; padding: 15px 20px; margin-bottom: 1em; border-radius: 4px; line-height: 1.6; color: #000000 }
-        .notice strong { color: #ff0a0ac0; }
-        #barraPrincipal { display: flex; flex-direction: column; padding-top: 1em; padding-bottom: 1em; }
-        #perfilFoto { width: 150px; height: 150px; border-radius: 50%; }
-        h1 { font-size: 2.5em; margin: 0; }
-        .textoCentrado { font-size: 1.1em; margin: 10px 0 0 0; }
-        .banner { background-color: rgba(32, 32, 32, 0.8); padding: 1em; border-radius: 4px; min-width: 100%; margin-top: 0; margin-bottom: 1em; }
-        .banner-title { margin: 0; font-size: 1.3em; }
-        .skills-section { display: flex; flex-direction: column; align-items: center; min-width: 100%; }
-        .skills-card { background-color: rgba(0,0,0,.9); padding: 20px; border-radius: 4px; min-width: 100%; margin-bottom: 1em; }
-        .skills-card h5 { margin-top: 0; font-size: 1.1em; }
-        .skills-list { display: flex; flex-direction: column; align-items: center; list-style: none; }
-        .skills-list.education { display: flex; flex-direction: column; }
-        .skills-list.skill { display: flex; flex-direction: column; align-items: flex-start; padding-left: 35%; }
-        .skills-list li { display: flex; }
-        #redesSociales { padding: 20px 0; }
-        #redesSociales > ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 20px; }
-        .carta { list-style: none; padding: 0; display: flex; align-items: center; gap: 10px; }
-        .carta svg { width: 50px; height: 50px; }
-        .btn { display: inline-block; padding: 8px 16px; background-color: #333; color: white; text-decoration: none; border-radius: 4px; border: none; cursor: pointer; }
-        .btn:hover { background-color: #444; }
-        .formulario { background-color: #3a3a3a; padding: 20px; border-radius: 4px; }
-        textarea { padding: 10px; margin: 10px 0; }
-        a { color: #0a8cff; text-decoration: none; }
-        a:hover { text-decoration: underline; }
-        #contacto { display: flex; flex-direction: column;}
+        body {
+          font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+          background-color: #2a2a2a;
+          color: #fff;
+          margin: 0;
+          padding: 1em;
+        }
+
+        header {
+          text-align: center;
+          margin-bottom: 1em;
+        }
+
+        #todo {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .notice {
+          background-color: #ffffff;
+          border-left: 4px solid #ff0a0ac0;
+          padding: 15px 20px;
+          margin-bottom: 1em;
+          border-radius: 4px;
+          line-height: 1.6;
+          color: #000000
+        }
+
+        .notice strong {
+          color: #ff0a0ac0;
+        }
+
+        #barraPrincipal {
+          display: flex;
+          flex-direction: column;
+          padding-top: 1em;
+          padding-bottom: 1em;
+        }
+
+        #perfilFoto {
+          width: 150px;
+          height: 150px;
+          border-radius: 50%;
+        }
+
+        h1 {
+          font-size: 2.5em;
+          margin: 0;
+        }
+
+        .textoCentrado {
+          font-size: 1.1em;
+          margin: 10px 0 0 0;
+        }
+
+        .banner {
+          background-color: rgba(32, 32, 32, 0.8);
+          padding: 1em;
+          border-radius: 4px;
+          min-width: 100%;
+          margin-top: 0;
+          margin-bottom: 1em;
+        }
+
+        .banner-title {
+          margin: 0;
+          font-size: 1.3em;
+        }
+
+        .skills-section {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          min-width: 100%;
+        }
+
+        .skills-card {
+          background-color: rgba(0, 0, 0, .9);
+          padding: 20px;
+          border-radius: 4px;
+          min-width: 100%;
+          margin-bottom: 1em;
+        }
+
+        .skills-card h5 {
+          margin-top: 0;
+          font-size: 1.1em;
+        }
+
+        .skills-list {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          list-style: none;
+        }
+
+        .skills-list.education {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .skills-list.skill {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          padding-left: 35%;
+        }
+
+        .skills-list li {
+          display: flex;
+        }
+
+        #redesSociales {
+          padding: 20px 0;
+        }
+
+        #redesSociales>ul {
+          list-style: none;
+          padding: 0;
+          display: flex;
+          flex-wrap: wrap;
+          gap: 20px;
+        }
+
+        .carta {
+          list-style: none;
+          padding: 0;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+        }
+
+        .carta svg {
+          width: 50px;
+          height: 50px;
+        }
+
+        .carta li {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .btn {
+          display: inline-block;
+          padding: 8px 16px;
+          background-color: #333;
+          color: white;
+          text-decoration: none;
+          border-radius: 4px;
+          border: none;
+          cursor: pointer;
+        }
+
+        .btn:hover {
+          background-color: #444;
+        }
+
+        .formulario {
+          background-color: #3a3a3a;
+          padding: 20px;
+          border-radius: 4px;
+        }
+
+        textarea {
+          padding: 10px;
+          margin: 10px 0;
+        }
+
+        a {
+          color: #0a8cff;
+          text-decoration: none;
+        }
+
+        a:hover {
+          text-decoration: underline;
+        }
+
+        #contacto {
+          display: flex;
+          flex-direction: column;
+        }
+
+        .svg {
+          min-width: 100px !important;
+          min-height: 100px !important;
+          background-color: rgba(0, 0, 0, 1);
+          border-radius: 75%;
+          padding: 1em;
+        }
       </style>
       <div id="todo">
         <header>
           <div class="notice">
             <strong>ℹ️ Versión estática del portfolio</strong><br>
-            Este es un proyecto desarrollado en <strong>Angular</strong> que utiliza <strong>JavaScript</strong> para una experiencia interactiva mejorada. Estás viendo una <strong>versión estática simplificada</strong> porque JavaScript está deshabilitado en tu navegador. Para una mejor experiencia, habilita JavaScript.
+            Este es un proyecto desarrollado en <strong>Angular</strong> que utiliza <strong>JavaScript</strong> para
+            una experiencia interactiva mejorada. Estás viendo una <strong>versión estática simplificada</strong> porque
+            JavaScript está deshabilitado en tu navegador. Para una mejor experiencia, habilita JavaScript.
           </div>
           <section id="barraPrincipal">
             <img id="perfilFoto" src="assets/images/miFoto.jpg" alt="Guillermo Gigeroa">
@@ -72,7 +235,7 @@
           </div>
           <div class="skills-section">
             <div class="skills-card">
-              <h4>Mi educación</h4>
+              <h4>Formación académica</h4>
               <ul class="skills-list education">
                 <li>Facultad Regional General Pacheco – Pacheco, Buenos Aires.</li>
                 <li><br><i>Técnico Universitario en Programación.</i><br></li>
@@ -93,28 +256,39 @@
                 <li>✔ Python</li>
                 <li>✔ Typescript</li>
                 <li>✔ Javascript</li>
-                <li>✔ Bootstrap</li>
+                <li>✔ Boostrap</li>
+                <li>✔ IA Prompting</li>
                 <li>✔ HTML</li>
                 <li>✔ CSS</li>
                 <li>✔ SCSS</li>
                 <li>✔ SQL</li>
                 <li>✔ C++</li>
                 <li>✔ C#</li>
+                <li>✔ JQuery</li>
+                <li>✔ ASP.net</li>
               </ul>
             </div>
             <div class="skills-card">
               <h4>Herramientas que utilizo</h4>
               <ul class="skills-list skill">
                 <li>✔ Visual Studio Code</li>
+                <li>✔ Antigravity</li>
                 <li>✔ Windsurf</li>
+                <li>✔ OpenCode</li>
                 <li>✔ Claude</li>
                 <li>✔ Eclipse</li>
                 <li>✔ Postman</li>
                 <li>✔ PyCharm</li>
                 <li>✔ SQL Server</li>
-                <li>✔ Visual Studio .Net</li>
+                <li>✔ Code::Blocks</li>
+                <li>✔ SharpDevelop</li>
+                <li>✔ .Net framework</li>
                 <li>✔ CorelDraw</li>
                 <li>✔ Photoshop</li>
+                <li>✔ Excel</li>
+                <li>✔ Word</li>
+                <li>✔ PowerPoint</li>
+                <li>✔ Outlook</li>
               </ul>
             </div>
             <div class="skills-card">
@@ -135,22 +309,56 @@
             <ul>
               <li>
                 <ul class="carta">
-                  <li><a href="https://github.com/GuillermoGigeroa" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                  <li>
+                    <a href="https://github.com/GuillermoGigeroa" target="_blank" rel="noopener noreferrer">
+                      <svg aria-hidden="true" viewBox="0 0 24 24" length="auto" class="svg">
+                        <path fill="#ffffff" d="M12 1C5.923 1 1 5.923 1 12c0 4.867 3.149 8.979 7.521 10.436.55.096.756-.233.756-.522 0-.262-.013-1.128-.013-2.049-2.764.509-3.479-.674-3.699-1.292-.124-.317-.66-1.293-1.127-1.554-.385-.207-.936-.715-.014-.729.866-.014 1.485.797 1.691 1.128.99 1.663 2.571 1.196 3.204.907.096-.715.385-1.196.701-1.471-2.448-.275-5.005-1.224-5.005-5.432 0-1.196.426-2.186 1.128-2.956-.111-.275-.496-1.402.11-2.915 0 0 .921-.288 3.024 1.128a10.193 10.193 0 0 1 2.75-.371c.936 0 1.871.123 2.75.371 2.104-1.43 3.025-1.128 3.025-1.128.605 1.513.221 2.64.111 2.915.701.77 1.127 1.747 1.127 2.956 0 4.222-2.571 5.157-5.019 5.432.399.344.743 1.004.743 2.035 0 1.471-.014 2.654-.014 3.025 0 .289.206.632.756.522C19.851 20.979 23 16.854 23 12c0-6.077-4.922-11-11-11Z">
+                        </path>
+                      </svg>
+                    </a>
+                    <p>GitHub</p>
+                  </li>
                 </ul>
               </li>
               <li>
                 <ul class="carta">
-                  <li><a href="https://www.linkedin.com/in/guillermogigeroa" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                  <li>
+                    <a href="https://www.linkedin.com/in/guillermogigeroa" target="_blank" rel="noopener noreferrer">
+                      <svg xmlns="http://www.w3.org/2000/svg" length="auto" aria-hidden="false" viewBox="0 0 34 34" class="svg" role="img" aria-label="LinkedIn">
+                        <path fill="#0a66c2" d="M34 2.5v29a2.5 2.5 0 0 1-2.5 2.5h-29A2.5 2.5 0 0 1 0 31.5v-29A2.5 2.5 0 0 1 2.5 0h29A2.5 2.5 0 0 1 34 2.5M10 13H5v16h5zm.45-5.5a2.88 2.88 0 0 0-2.86-2.9H7.5a2.9 2.9 0 0 0 0 5.8 2.88 2.88 0 0 0 2.95-2.81zM29 19.28c0-4.81-3.06-6.68-6.1-6.68a5.7 5.7 0 0 0-5.06 2.58h-.14V13H13v16h5v-8.51a3.32 3.32 0 0 1 3-3.58h.19c1.59 0 2.77 1 2.77 3.52V29h5z" display="var(--svgDisplayLight)"/>
+                        <path fill="#fff" d="M34 2.5v29a2.5 2.5 0 0 1-2.5 2.5h-29A2.5 2.5 0 0 1 0 31.5v-29A2.5 2.5 0 0 1 2.5 0h29A2.5 2.5 0 0 1 34 2.5M10 13H5v16h5zm.45-5.5a2.88 2.88 0 0 0-2.86-2.9H7.5a2.9 2.9 0 0 0 0 5.8 2.88 2.88 0 0 0 2.95-2.81zM29 19.28c0-4.81-3.06-6.68-6.1-6.68a5.7 5.7 0 0 0-5.06 2.58h-.14V13H13v16h5v-8.51a3.32 3.32 0 0 1 3-3.58h.19c1.59 0 2.77 1 2.77 3.52V29h5z" display="var(--svgDisplayDark)"/>
+                      </svg>
+                    </a>
+                    <p>LinkedIn</p>
+                  </li>
                 </ul>
               </li>
               <li>
                 <ul class="carta">
-                  <li><a href="https://www.instagram.com/guille.gigeroa" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+                  <li>
+                    <a href="https://www.instagram.com/guille.gigeroa" target="_blank" rel="noopener noreferrer">
+                      <svg aria-label="Instagram" role="img" viewBox="32 4 113 32" length="auto" class="svg">
+                        <title>Instagram</title>
+                        <path clip-rule="evenodd" d="M37.82 4.11c-2.32.97-4.86 3.7-5.66 7.13-1.02 4.34 3.21 6.17 3.56 5.57.4-.7-.76-.94-1-3.2-.3-2.9 1.05-6.16 2.75-7.58.32-.27.3.1.3.78l-.06 14.46c0 3.1-.13 4.07-.36 5.04-.23.98-.6 1.64-.33 1.9.32.28 1.68-.4 2.46-1.5a8.13 8.13 0 0 0 1.33-4.58c.07-2.06.06-5.33.07-7.19 0-1.7.03-6.71-.03-9.72-.02-.74-2.07-1.51-3.03-1.1Zm82.13 14.48a9.42 9.42 0 0 1-.88 3.75c-.85 1.72-2.63 2.25-3.39-.22-.4-1.34-.43-3.59-.13-5.47.3-1.9 1.14-3.35 2.53-3.22 1.38.13 2.02 1.9 1.87 5.16ZM96.8 28.57c-.02 2.67-.44 5.01-1.34 5.7-1.29.96-3 .23-2.65-1.72.31-1.72 1.8-3.48 4-5.64l-.01 1.66Zm-.35-10a10.56 10.56 0 0 1-.88 3.77c-.85 1.72-2.64 2.25-3.39-.22-.5-1.69-.38-3.87-.13-5.25.33-1.78 1.12-3.44 2.53-3.44 1.38 0 2.06 1.5 1.87 5.14Zm-13.41-.02a9.54 9.54 0 0 1-.87 3.8c-.88 1.7-2.63 2.24-3.4-.23-.55-1.77-.36-4.2-.13-5.5.34-1.95 1.2-3.32 2.53-3.2 1.38.14 2.04 1.9 1.87 5.13Zm61.45 1.81c-.33 0-.49.35-.61.93-.44 2.02-.9 2.48-1.5 2.48-.66 0-1.26-1-1.42-3-.12-1.58-.1-4.48.06-7.37.03-.59-.14-1.17-1.73-1.75-.68-.25-1.68-.62-2.17.58a29.65 29.65 0 0 0-2.08 7.14c0 .06-.08.07-.1-.06-.07-.87-.26-2.46-.28-5.79 0-.65-.14-1.2-.86-1.65-.47-.3-1.88-.81-2.4-.2-.43.5-.94 1.87-1.47 3.48l-.74 2.2.01-4.88c0-.5-.34-.67-.45-.7a9.54 9.54 0 0 0-1.8-.37c-.48 0-.6.27-.6.67 0 .05-.08 4.65-.08 7.87v.46c-.27 1.48-1.14 3.49-2.09 3.49s-1.4-.84-1.4-4.68c0-2.24.07-3.21.1-4.83.02-.94.06-1.65.06-1.81-.01-.5-.87-.75-1.27-.85-.4-.09-.76-.13-1.03-.11-.4.02-.67.27-.67.62v.55a3.71 3.71 0 0 0-1.83-1.49c-1.44-.43-2.94-.05-4.07 1.53a9.31 9.31 0 0 0-1.66 4.73c-.16 1.5-.1 3.01.17 4.3-.33 1.44-.96 2.04-1.64 2.04-.99 0-1.7-1.62-1.62-4.4.06-1.84.42-3.13.82-4.99.17-.8.04-1.2-.31-1.6-.32-.37-1-.56-1.99-.33-.7.16-1.7.34-2.6.47 0 0 .05-.21.1-.6.23-2.03-1.98-1.87-2.69-1.22-.42.39-.7.84-.82 1.67-.17 1.3.9 1.91.9 1.91a22.22 22.22 0 0 1-3.4 7.23v-.7c-.01-3.36.03-6 .05-6.95.02-.94.06-1.63.06-1.8 0-.36-.22-.5-.66-.67-.4-.16-.86-.26-1.34-.3-.6-.05-.97.27-.96.65v.52a3.7 3.7 0 0 0-1.84-1.49c-1.44-.43-2.94-.05-4.07 1.53a10.1 10.1 0 0 0-1.66 4.72c-.15 1.57-.13 2.9.09 4.04-.23 1.13-.89 2.3-1.63 2.3-.95 0-1.5-.83-1.5-4.67 0-2.24.07-3.21.1-4.83.02-.94.06-1.65.06-1.81 0-.5-.87-.75-1.27-.85-.42-.1-.79-.13-1.06-.1-.37.02-.63.35-.63.6v.56a3.7 3.7 0 0 0-1.84-1.49c-1.44-.43-2.93-.04-4.07 1.53-.75 1.03-1.35 2.17-1.66 4.7a15.8 15.8 0 0 0-.12 2.04c-.3 1.81-1.61 3.9-2.68 3.9-.63 0-1.23-1.21-1.23-3.8 0-3.45.22-8.36.25-8.83l1.62-.03c.68 0 1.29.01 2.19-.04.45-.02.88-1.64.42-1.84-.21-.09-1.7-.17-2.3-.18-.5-.01-1.88-.11-1.88-.11s.13-3.26.16-3.6c.02-.3-.35-.44-.57-.53a7.77 7.77 0 0 0-1.53-.44c-.76-.15-1.1 0-1.17.64-.1.97-.15 3.82-.15 3.82-.56 0-2.47-.11-3.02-.11-.52 0-1.08 2.22-.36 2.25l3.2.09-.03 6.53v.47c-.53 2.73-2.37 4.2-2.37 4.2.4-1.8-.42-3.15-1.87-4.3-.54-.42-1.6-1.22-2.79-2.1 0 0 .69-.68 1.3-2.04.43-.96.45-2.06-.61-2.3-1.75-.41-3.2.87-3.63 2.25a2.61 2.61 0 0 0 .5 2.66l.15.19c-.4.76-.94 1.78-1.4 2.58-1.27 2.2-2.24 3.95-2.97 3.95-.58 0-.57-1.77-.57-3.43 0-1.43.1-3.58.19-5.8.03-.74-.34-1.16-.96-1.54a4.33 4.33 0 0 0-1.64-.69c-.7 0-2.7.1-4.6 5.57-.23.69-.7 1.94-.7 1.94l.04-6.57c0-.16-.08-.3-.27-.4a4.68 4.68 0 0 0-1.93-.54c-.36 0-.54.17-.54.5l-.07 10.3c0 .78.02 1.69.1 2.09.08.4.2.72.36.91.15.2.33.34.62.4.28.06 1.78.25 1.86-.32.1-.69.1-1.43.89-4.2 1.22-4.31 2.82-6.42 3.58-7.16.13-.14.28-.14.27.07l-.22 5.32c-.2 5.37.78 6.36 2.17 6.36 1.07 0 2.58-1.06 4.2-3.74l2.7-4.5 1.58 1.46c1.28 1.2 1.7 2.36 1.42 3.45-.21.83-1.02 1.7-2.44.86-.42-.25-.6-.44-1.01-.71-.23-.15-.57-.2-.78-.04-.53.4-.84.92-1.01 1.55-.17.61.45.94 1.09 1.22.55.25 1.74.47 2.5.5 2.94.1 5.3-1.42 6.94-5.34.3 3.38 1.55 5.3 3.72 5.3 1.45 0 2.91-1.88 3.55-3.72.18.75.45 1.4.8 1.96 1.68 2.65 4.93 2.07 6.56-.18.5-.69.58-.94.58-.94a3.07 3.07 0 0 0 2.94 2.87c1.1 0 2.23-.52 3.03-2.31.09.2.2.38.3.56 1.68 2.65 4.93 2.07 6.56-.18l.2-.28.05 1.4-1.5 1.37c-2.52 2.3-4.44 4.05-4.58 6.09-.18 2.6 1.93 3.56 3.53 3.69a4.5 4.5 0 0 0 4.04-2.11c.78-1.15 1.3-3.63 1.26-6.08l-.06-3.56a28.55 28.55 0 0 0 5.42-9.44s.93.01 1.92-.05c.32-.02.41.04.35.27-.07.28-1.25 4.84-.17 7.88.74 2.08 2.4 2.75 3.4 2.75 1.15 0 2.26-.87 2.85-2.17l.23.42c1.68 2.65 4.92 2.07 6.56-.18.37-.5.58-.94.58-.94.36 2.2 2.07 2.88 3.05 2.88 1.02 0 2-.42 2.78-2.28.03.82.08 1.49.16 1.7.05.13.34.3.56.37.93.34 1.88.18 2.24.11.24-.05.43-.25.46-.75.07-1.33.03-3.56.43-5.21.67-2.79 1.3-3.87 1.6-4.4.17-.3.36-.35.37-.03.01.64.04 2.52.3 5.05.2 1.86.46 2.96.65 3.3.57 1 1.27 1.05 1.83 1.05.36 0 1.12-.1 1.05-.73-.03-.31.02-2.22.7-4.96.43-1.79 1.15-3.4 1.41-4 .1-.21.15-.04.15 0-.06 1.22-.18 5.25.32 7.46.68 2.98 2.65 3.32 3.34 3.32 1.47 0 2.67-1.12 3.07-4.05.1-.7-.05-1.25-.48-1.25Z" fill="#ffffff" fill-rule="evenodd"/>
+                      </svg>
+                    </a>
+                    <p>Instagram</p>
+                  </li>
                 </ul>
               </li>
               <li>
                 <ul class="carta">
-                  <li><a href="https://es-la.facebook.com/gigeroa" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+                  <li>
+                    <a href="https://es-la.facebook.com/gigeroa" target="_blank" rel="noopener noreferrer">
+                      <svg viewBox="0 0 36 36" class="svg" length="auto">
+                        <path fill="#ffffff" d="M20.181 35.87C29.094 34.791 36 27.202 36 18c0-9.941-8.059-18-18-18S0 8.059 0 18c0 8.442 5.811 15.526 13.652 17.471L14 34h5.5l.681 1.87Z">
+                        </path>
+                        <path fill="#000000" d="M13.651 35.471v-11.97H9.936V18h3.715v-2.37c0-6.127 2.772-8.964 8.784-8.964 1.138 0 3.103.223 3.91.446v4.983c-.425-.043-1.167-.065-2.081-.065-2.952 0-4.09 1.116-4.09 4.025V18h5.883l-1.008 5.5h-4.867v12.37a18.183 18.183 0 0 1-6.53-.399Z">
+                        </path>
+                      </svg>
+                    </a>
+                    <p>Facebook</p>
+                  </li>
                 </ul>
               </li>
             </ul>
@@ -164,14 +372,25 @@
           <div class="formulario">
             <p>Para contactarme, utiliza los siguientes medios:</p>
             <ul style="list-style: none; padding: 0;">
-              <li><strong>WhatsApp:</strong> <a href="https://wa.me/541169221781" target="_blank" rel="noopener noreferrer">+54 11 6922-1781</a></li>
-              <li><strong>Email:</strong> <a href="mailto:guillermo.gigeroa@hotmail.com">guillermo.gigeroa@hotmail.com</a></li>
+              <hr>
+              <li>
+                <strong>WhatsApp:</strong>
+                <br>
+                <a href="https://wa.me/541169221781" target="_blank" rel="noopener noreferrer">+54 11 6922-1781</a>
+              </li>
+              <hr>
+              <li>
+                <strong>Email:</strong>
+                <br>
+                <a href="mailto:guillermo.gigeroa@hotmail.com">guillermo.gigeroa@hotmail.com</a>
+              </li>
+              <hr>
             </ul>
           </div>
         </section>
       </div>
     </noscript>
   </app-root>
-<script src="polyfills-OQVFUOR5.js" type="module"></script><script src="scripts-6MXNIAMR.js" defer></script><script src="main-I7UCWDVF.js" type="module"></script></body>
+<script src="polyfills-OQVFUOR5.js" type="module"></script><script src="scripts-6MXNIAMR.js" defer></script><script src="main-HB2YKNMC.js" type="module"></script></body>
 
 </html>
