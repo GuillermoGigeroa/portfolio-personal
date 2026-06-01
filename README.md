@@ -72,14 +72,13 @@ npm run build
 # Publicar el contenido de la carpeta docs/ en la rama develop para levantarlo en GitHub Pages
 ```
 
-## Contribuciones
-
-Pequeñas mejoras o correcciones son bienvenidas. Abre un issue o un pull request.
-
 ## Contacto
 
 Encontrarme en: https://guillermogigeroa.github.io/portfolio-personal/
 
 ---
 
-Archivo generado y actualizado automáticamente.
+## Licencia
+
+© 2026 Guillermo A. Gigeroa – Todos los derechos reservados.
+Ver [LICENSE](./LICENSE) para más detalles.
