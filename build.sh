@@ -1,1 +1,1 @@
-npm run build;git add .;git commit -m "build '/docs' files";git push;
+pnpm build;git add .;git commit -m "build '/docs' files";git push;
