@@ -39,14 +39,8 @@ Usar `pnpm <script>` desde la raíz del proyecto.
 - `build`: Genera la versión de producción en `docs/` con `--base-href /portfolio-personal/`
 - `test`: Ejecuta tests unitarios con Karma
 
-### Scripts de despliegue
+### Scripts de despliegue (PowerShell)
 
-**Bash (Linux/Mac/Git Bash):**
-- `./build.sh`: Build + commit + push (rama actual)
-- `./build-pages.sh`: Merge update → develop + push (GitHub Pages)
-- `./deploy.sh`: Proceso completo (build + commit + merge + push)
-
-**PowerShell (Windows):**
 - `.\build.ps1`: Build + commit + push (rama actual)
 - `.\build-pages.ps1`: Merge update → develop + push (GitHub Pages)
 - `.\deploy.ps1`: Proceso completo (build + commit + merge + push)
@@ -85,16 +79,12 @@ src/
 El proyecto está configurado para desplegarse en GitHub Pages. Ejecutar:
 
 **Opción 1 - Despliegue completo (recomendado):**
-```bash
-# Bash (Linux/Mac/Git Bash)
-./deploy.sh
-
-# PowerShell (Windows)
+```powershell
 .\deploy.ps1
 ```
 
 **Opción 2 - Pasos manuales:**
-```bash
+```powershell
 pnpm build
 # Publicar el contenido de la carpeta docs/ en la rama develop para levantarlo en GitHub Pages
 ```
