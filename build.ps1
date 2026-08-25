@@ -3,16 +3,16 @@
 
 $ErrorActionPreference = "Stop"
 
-Write-Host "🔨 Building project with pnpm..." -ForegroundColor Cyan
+Write-Host "Building project with pnpm..." -ForegroundColor Cyan
 pnpm build
 
-Write-Host "📝 Adding changes to git..." -ForegroundColor Cyan
+Write-Host "Adding changes to git..." -ForegroundColor Cyan
 git add .
 
-Write-Host "💾 Committing changes..." -ForegroundColor Cyan
+Write-Host "Committing changes..." -ForegroundColor Cyan
 git commit -m "build '/docs' files"
 
-Write-Host "🚀 Pushing to remote..." -ForegroundColor Cyan
+Write-Host "Pushing to remote..." -ForegroundColor Cyan
 git push
 
-Write-Host "✅ Build and push completed successfully!" -ForegroundColor Green
+Write-Host "Build and push completed successfully!" -ForegroundColor Green
