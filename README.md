@@ -8,7 +8,7 @@ Demo en vivo: https://guillermogigeroa.github.io/portfolio-personal/
 
 - **Framework**: Angular 21.2.15
 - **Node**: Recomendado >=18
-- **Package Manager**: npm
+- **Package Manager**: pnpm
 - **Estilos**: Bootstrap 5.2.3 + SCSS
 - **Testing**: Jasmine + Karma
 
@@ -32,7 +32,7 @@ Demo en vivo: https://guillermogigeroa.github.io/portfolio-personal/
 
 ## Scripts disponibles
 
-Usar `npm run <script>` desde la raíz del proyecto.
+Usar `pnpm <script>` desde la raíz del proyecto.
 
 - `start`: Inicia servidor de desarrollo (ng serve -o)
 - `start-proxy`: Inicia con configuración de proxy
@@ -42,8 +42,8 @@ Usar `npm run <script>` desde la raíz del proyecto.
 Ejemplo:
 
 ```bash
-npm install
-npm run start
+pnpm install
+pnpm start
 ```
 
 ## Estructura principal
@@ -68,7 +68,7 @@ src/
 El proyecto está configurado para desplegarse en GitHub Pages. Ejecutar:
 
 ```bash
-npm run build
+pnpm build
 # Publicar el contenido de la carpeta docs/ en la rama develop para levantarlo en GitHub Pages
 ```
 
